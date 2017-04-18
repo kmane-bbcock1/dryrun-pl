@@ -150,4 +150,9 @@ jobs:
       sourceName: "firstjob"          # The name of your Jenkins job
    # steps:
     #- OUT: "ar-files"     
-  
+
+#RUNCI
+  - name: runCI-job
+    type: runCI
+    steps:
+      - IN: ar-samplescript
