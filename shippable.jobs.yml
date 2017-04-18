@@ -115,7 +115,16 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
-
+        
+  - name: 
+    type: release
+    steps:
+      - IN: ar-version
+         #versionName: testrelease
+     # - IN: ar-inrunSh
+      - TASK: managed
+        bump: rc
+        
 #PROVISION
  # - name: ar-provision                                                  #required
  #   type: provision                                                  #required
