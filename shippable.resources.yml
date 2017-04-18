@@ -50,7 +50,7 @@ resources:
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
       branches: 
-        only: master1234
+        only: master
           
       
 #IMAGES
