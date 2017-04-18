@@ -116,7 +116,7 @@ jobs:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
         
-  - name: (*^%$$#$
+  - name: release1
     type: release
     steps:
       - IN: ar-version
