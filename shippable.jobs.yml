@@ -128,13 +128,13 @@ jobs:
       - IN: ar-dopts
       - NOTIFY: ar-slack
        #- NOTIFY: allpl-irc
-    on_success:
-      - OUT: ar-email
-      - NOTIFY: ar-slack
+    #on_success:
+     # - OUT: ar-email
+     # - NOTIFY: ar-slack
        #- NOTIFY: allpl-irc
-    on_failure:
-      - NOTIFY: ar-email
-      - NOTIFY: ar-slack 
+    #on_failure:
+    #  - NOTIFY: ar-email
+    #  - NOTIFY: ar-slack 
         
 #PROVISION
  # - name: ar-provision                                                  #required
