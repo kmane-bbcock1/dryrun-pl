@@ -9,9 +9,9 @@ resources:
   
   - name: ar-ddccluster
     type: cluster
-    integration: #ship-ddc
-    pointer:
-      sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
+    integration: ship-ddc
+    #pointer:
+     # sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
 
 #DOCKER OPTIONS
 
