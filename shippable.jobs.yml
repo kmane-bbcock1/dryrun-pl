@@ -152,7 +152,7 @@ jobs:
     #- OUT: "ar-files"     
 
 #RUNCI
-  - name: runCI-job
+  - name: dryrun-pl_runCI
     type: runCI
     steps: 
-      - OUT: ar-samplescript
+      - IN: dryrun-pl_ciRepo
