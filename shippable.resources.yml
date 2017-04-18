@@ -46,10 +46,10 @@ resources:
 
   - name: ar-samplescript
     type: gitRepo
-    integration: #"github"
-    pointer:
-      sourceName: "shiptest-rc-me/sample-script"
-      branch: "master"
+    integration: "github"
+    #pointer:
+     # sourceName: "shiptest-rc-me/sample-script"
+     # branch: "master"
       
 #IMAGES
   - name: ar-image1
