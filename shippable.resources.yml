@@ -48,7 +48,7 @@ resources:
     type: gitRepo
     integration: "github"
     pointer:
-     # sourceName: "shiptest-rc-me/sample-script"
+      sourceName: #"shiptest-rc-me/sample-script"
      # branch: "master"
       
 #IMAGES
