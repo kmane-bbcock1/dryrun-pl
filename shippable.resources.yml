@@ -25,7 +25,8 @@ resources:
   - name: ar-dopts
     type: dockerOptions
     version:
-       memory: 100
+      memory: 
+        - 100
   
   - name: ar-dopts2invalid
     type: dockerOptions
