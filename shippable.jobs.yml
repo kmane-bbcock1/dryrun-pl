@@ -137,10 +137,10 @@ jobs:
     #  - NOTIFY: ar-slack 
         
 #PROVISION
- # - name: ar-provision                                                  #required
- #   type: provision                                                  #required
- #   steps:
- #     - IN: ar-files 
+  - name: ar-provision                                                  #required
+    type: provision                                                  #required
+ steps:
+      - IN: ar-files 
 
 #JENKINSJOB
   - name: "ar-jenkins"                # a memorable, unique name. this is how your job will be referred to in shippable pipelines
