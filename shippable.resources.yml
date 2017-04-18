@@ -49,10 +49,11 @@ resources:
     integration: "github"
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
-      branches:
-        except: 
-          br1: master 
-          br2: tr1
+      branch: master
+      buildOnCommit: true         
+      buildOnPullRequest: true
+      buildOnRelease: true
+      buildOnTagPush: true
       
 #IMAGES
   - name: ar-image1
