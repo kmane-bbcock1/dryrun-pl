@@ -139,8 +139,8 @@ jobs:
 #PROVISION
   - name: ar-provision                                                  #required
     type: provision                                                  #required
- steps:
-      - IN: ar-files 
+    steps:
+      #- IN: ar-files 
 
 #JENKINSJOB
   - name: "ar-jenkins"                # a memorable, unique name. this is how your job will be referred to in shippable pipelines
