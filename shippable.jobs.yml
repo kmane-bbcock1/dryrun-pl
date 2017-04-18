@@ -33,7 +33,7 @@ jobs:
       - IN: ar-image1
       # versionNumber: 100
       - IN: ar-image2invalidimg
-      - OUT: ar-image4invalidformat
+      #- OUT: ar-image4invalidformat
       - IN: ar-tg1
     on_start:
       - NOTIFY: ar-email
@@ -88,7 +88,7 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
-      - OUT: ar-image3invalidtag
+      - OUT: ar-image2invalidimg
     on_start:
       - NOTIFY: ar-slack
       - NOTIFY: ar-email
