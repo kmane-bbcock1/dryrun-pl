@@ -9,7 +9,7 @@ resources:
   
   - name: ar-ddccluster
     type: cluster
-    integration: plv2-ddc
+    integration: ship-ddc
     pointer:
       sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
 
