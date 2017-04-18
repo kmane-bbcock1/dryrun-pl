@@ -154,4 +154,5 @@ jobs:
 #RUNCI
   - name: runCI-job
     type: runCI
-    steps: ar-samplescript
+    steps: 
+      - OUT: ar-samplescript
