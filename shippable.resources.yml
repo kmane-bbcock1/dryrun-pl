@@ -50,8 +50,7 @@ resources:
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
       branches:
-        except: 
-          - master       
+        except: master       
       
 #IMAGES
   - name: ar-image1
