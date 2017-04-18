@@ -50,10 +50,10 @@ resources:
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
       branch: master
-      buildOnCommit: true         
-      buildOnPullRequest: true
-      buildOnRelease: true
-      buildOnTagPush: true
+      buildOnCommit: test       
+      buildOnPullRequest: 123
+      buildOnRelease: 644
+      buildOnTagPush: &^%
       
 #IMAGES
   - name: ar-image1
