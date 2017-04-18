@@ -38,9 +38,9 @@ resources:
     type: file
     integration: docker
     pointer:
-      sourceName: #"random"
-    seed:
-      versionName: "random-2"
+      sourceName: "random"
+    #seed:
+     # versionName: "random-2"
 
 #GITREPO:
 
