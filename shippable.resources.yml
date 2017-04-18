@@ -27,13 +27,13 @@ resources:
         - "plv2-manifest8redis_0_0_055d5014-109c-4c84-9bbe-3009a523:testenv"
 
 #FILES
- # - name: ar-files                              #required
-  #  type: file                                  #required
-   # integration: files             #optional
-   # pointer:
-   #   sourceName: <string>                      #required
-   # seed:
-    #  versionName: <string>
+  - name: ar-files
+    type: file
+    integration: ship-jfrog
+    pointer:
+      sourceName: "random"
+    seed:
+      versionName: "random-2"
 
 #GITREPO:
 
