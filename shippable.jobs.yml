@@ -124,6 +124,17 @@ jobs:
      # - IN: ar-inrunSh
       - TASK: managed
         bump: rc
+    on_start:
+      - IN: ar-dopts
+      - NOTIFY: ar-slack
+       #- NOTIFY: allpl-irc
+    on_success:
+      - OUT: ar-email
+      - NOTIFY: ar-slack
+       #- NOTIFY: allpl-irc
+    on_failure:
+      - NOTIFY: ar-email
+      - NOTIFY: ar-slack 
         
 #PROVISION
  # - name: ar-provision                                                  #required
