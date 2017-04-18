@@ -11,14 +11,14 @@ resources:
     type: cluster
     integration: ship-ddc
     pointer:
-      sourceName : #"nothing" #we can anything because it is mandatory but ddc doesnot have clusters
+      #sourceName : #"nothing" #we can anything because it is mandatory but ddc doesnot have clusters
       
   - name: ar-ecscluster
     type: cluster
     integration: ship-aws
     pointer:
-      sourceName : #"testCL"
-      region: #"us-west-2"
+      #sourceName : #"testCL"
+      #region: #"us-west-2"
       
 #DOCKER OPTIONS
 
