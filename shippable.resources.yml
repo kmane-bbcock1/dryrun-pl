@@ -36,7 +36,7 @@ resources:
 FILES
   - name: ar-files
     type: file
-    integration: ship-aws
+    integration: docker
     pointer:
       sourceName: "random"
     seed:
