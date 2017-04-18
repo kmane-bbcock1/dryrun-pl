@@ -142,7 +142,7 @@ resources:
       
   - name: ar-replica2
     type: replicas
-    #version:
+    version:
      # count: 2
 
 #TIME
