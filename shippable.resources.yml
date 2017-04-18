@@ -37,8 +37,8 @@ resources:
   - name: ar-files
     type: file
     integration: docker
-    #pointer:
-      #sourceName: "random"
+    pointer:
+      sourceName: #"random"
     seed:
       versionName: "random-2"
 
