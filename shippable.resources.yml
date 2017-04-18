@@ -47,7 +47,7 @@ resources:
   - name: ar-samplescript
     type: gitRepo
     integration: "github"
-    #pointer:
+    pointer:
      # sourceName: "shiptest-rc-me/sample-script"
      # branch: "master"
       
