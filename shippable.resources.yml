@@ -17,7 +17,7 @@ resources:
     type: cluster
     integration: ship-aws
     pointer:
-      #sourceName : #"testCL"
+      sourceName : #"testCL"
       #region: #"us-west-2"
       
 #DOCKER OPTIONS
