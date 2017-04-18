@@ -149,8 +149,8 @@ resources:
 
   - name: ar-testtime
     type: time
-    seed:
-      interval: "*/9 * 9 9 *"
+   # seed:
+    #  interval: "*/9 * 9 9 *"
       
 #VERSIONS
 
