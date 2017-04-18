@@ -40,7 +40,7 @@ resources:
     pointer:
       sourceName: "random"
     seed:
-     # versionName: "random-2"
+      versionName: #"random-2"
 
 #GITREPO:
 
