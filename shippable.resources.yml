@@ -49,7 +49,9 @@ resources:
     integration: "github"
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
-      branch: #"master"
+      branches: 
+        only:
+          - "master12345"
       
 #IMAGES
   - name: ar-image1
