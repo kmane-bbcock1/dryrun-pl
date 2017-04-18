@@ -101,8 +101,8 @@ resources:
 #LOAD BALANCER
   - name: ar-lb
     type: loadBalancer
-    #pointer:
-     # sourceName: EC2Contai-EcsElast-GPCOXIIKWPUJ
+    pointer:
+      sourceName: #EC2Contai-EcsElast-GPCOXIIKWPUJ
 
 #NOTIFICATIONS
       
