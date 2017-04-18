@@ -124,7 +124,7 @@ jobs:
      # - IN: ar-inrunSh
       - TASK: managed
         bump: rc
-    starting:
+    on_start:
       - IN: ar-dopts
       - NOTIFY: ar-slack
        #- NOTIFY: allpl-irc
@@ -140,7 +140,7 @@ jobs:
   - name: ar-provision                                                  #required
     type: provision                                                  #required
     steps:
-      #- IN: ar-files 
+      - IN: ar-files 
 
 #JENKINSJOB
   - name: "ar-jenkins"                # a memorable, unique name. this is how your job will be referred to in shippable pipelines
