@@ -88,7 +88,7 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
-      - OUT: ar-image2invalidimg
+      #- OUT: ar-image2invalidimg
     on_start:
       - NOTIFY: ar-slack
       - NOTIFY: ar-email
