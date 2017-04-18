@@ -50,9 +50,9 @@ resources:
     pointer:
       sourceName: "shiptest-rc-me/sample-script"
       branch: master
-      tags:
-        only:
-          - v1.*
+     # tags:
+      #  only:
+       #   - v1.*
       buildOnCommit: true    
       buildOnPullRequest: true
       buildOnRelease: true
