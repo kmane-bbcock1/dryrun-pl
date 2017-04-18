@@ -124,7 +124,7 @@ jobs:
      # - IN: ar-inrunSh
       - TASK: managed
         bump: rc
-    on_starting:
+    starting:
       - IN: ar-dopts
       - NOTIFY: ar-slack
        #- NOTIFY: allpl-irc
