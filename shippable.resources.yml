@@ -39,7 +39,7 @@ resources:
     integration: docker
     pointer:
       sourceName: "random"
-    #seed:
+    seed:
      # versionName: "random-2"
 
 #GITREPO:
