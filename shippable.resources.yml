@@ -25,7 +25,7 @@ resources:
   - name: ar-dopts
     type: dockerOptions
     version:
-      memory: 101
+      memory: 100
   
   - name: ar-dopts2invalid
     type: dockerOptions
@@ -65,7 +65,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
-      versionName: "deploy.1"
+      versionName: "deploy.1sreya"
   
   - name: ar-image2invalidimg
     type: image
