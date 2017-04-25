@@ -139,14 +139,14 @@ resources:
         DB_USERNAME: "aye0aye"
         DB_PASSWORD: "aye0aye"
         ENVIRONMENT: "test-aws"
-        n1: f1
+      
         
 #REPLICAS
       
   - name: ar-replica2
     type: replicas
     version:
-      count: 22
+      count: 2
 
 #TIME
 
@@ -160,5 +160,5 @@ resources:
   - name: ar-version
     type: version
     seed:
-      versionName: "1.2.123-rc"
+      versionName: "1.2.123-rcsreya"
       
