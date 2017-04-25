@@ -114,6 +114,7 @@ resources:
         - "#pipeline-pvt"
         - "#pipeline-public"
         - "@shiphitchcock1"
+        - "#random"
 
   - name: ar-email
     type: notification
@@ -122,6 +123,7 @@ resources:
       recipients: 
         - "varsha@shippable.com"
         - "shiptest-rc-me@gmail.com"
+        - "sreyaj10@gmail.com"
 
 #PARAMS
 
