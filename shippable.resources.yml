@@ -160,5 +160,5 @@ resources:
   - name: ar-version
     type: version
     seed:
-      versionName: "1.2.123-rcsreya"
+      versionName: "1.2.123-rc"
       
