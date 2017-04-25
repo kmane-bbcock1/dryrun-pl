@@ -110,6 +110,9 @@ jobs:
       - IN: ar-samplescript
       # versionName: testsha
       - IN: ship_dh_cli
+      - IN: ar-testtime
+      - IN: ar-lb
+      - IN: ar-files
        #- IN: ar-image3invalidtag
       #- IN: test-time-1
       - TASK:
