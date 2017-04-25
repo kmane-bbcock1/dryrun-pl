@@ -3,7 +3,7 @@ resources:
 #CLICONFIG
   - name: ship_dh_cli
     type: cliConfig
-    integration: "ship4-docker"
+    integration: "docker"
 
 #CLUSTERS
   
