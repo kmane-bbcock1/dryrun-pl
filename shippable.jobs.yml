@@ -119,14 +119,14 @@ jobs:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
         
-  - name: r1-test
+  - name: r1-test1
     type: release
     steps:
       - IN: ar-version
          #versionName: testrelease
      # - IN: ar-inrunSh
       - TASK: managed
-        bump: rc
+        bump: rc  
         
 #PROVISION
  # - name: ar-provision                                                  #required
