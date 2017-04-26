@@ -119,7 +119,7 @@ jobs:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
         
-  - name: r1
+  - name: r1-test
     type: release
     steps:
       - IN: ar-version
