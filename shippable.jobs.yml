@@ -4,6 +4,7 @@ jobs:
 
   - name: ar-release
     type: release
+    allowPublicAccess: true
     steps:
       - IN: ar-version
          #versionName: testrelease
@@ -46,6 +47,7 @@ jobs:
     on_failure:
       - NOTIFY: ar-email
       - NOTIFY: ar-slack
+    allowPublicAccess: true
        
   - name: ar-manifest2
     type: manifest
@@ -57,6 +59,7 @@ jobs:
 #DEPLOY  
   - name: ar-ddcdeploy
     type: deploy
+    allowPublicAccess: true
     steps:
       - IN: ar-ddccluster
       - IN: ar-manifest1
@@ -76,10 +79,12 @@ jobs:
     on_failure:
       - NOTIFY: ar-email
       - NOTIFY: ar-slack
+    
       
 #RUNSH      
   - name: ar-inrunSh
     type: runSh
+    allowPublicAccess: true
     steps:
       - IN: ar-samplescript
      # versionName: testsha
@@ -106,6 +111,7 @@ jobs:
 #RUNCLI      
   - name: ar-inrunCLI
     type: runCLI
+    allowPublicAccess: true
     steps:
       - IN: ar-samplescript
       # versionName: testsha
