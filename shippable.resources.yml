@@ -18,7 +18,7 @@ resources:
     integration: ship-aws
     pointer:
       sourceName : "testCL"
-      #region: #"us-west-2"
+      region: "us-west-2"
       
 #DOCKER OPTIONS
 
