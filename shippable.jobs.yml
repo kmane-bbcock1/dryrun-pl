@@ -135,17 +135,17 @@ jobs:
         bump: rc  
         
 #PROVISION
- # - name: ar-provision                                                  #required
- #   type: provision                                                  #required
- #   steps:
- #     - IN: ar-files 
+  - name: ar-provision                                                  #required
+    type: provision                                                  #required
+    steps:
+      - IN: ar-files 
 
 #JENKINSJOB
- # - name: ar-jenkins                  # a memorable, unique name. this is how your job will be referred to in shippable pipelines
- #   type: jenkinsJob                  # The type of the job (should not be changed by the user)
- #   integration: "ship-jenkins"   # The name of your Jenkins integration (created via accountSettings page)
- #   pointer:
- #     sourceName: "firstjob"          # The name of your Jenkins job
-  #  steps:
-  #  - OUT: "ar-files"     
+  - name: ar-jenkins                  # a memorable, unique name. this is how your job will be referred to in shippable pipelines
+    type: jenkinsJob                  # The type of the job (should not be changed by the user)
+    integration: "ship-jenkins"   # The name of your Jenkins integration (created via accountSettings page)
+    pointer:
+      sourceName: "firstjob"          # The name of your Jenkins job
+    steps:
+      - OUT: "ar-files"     
   
