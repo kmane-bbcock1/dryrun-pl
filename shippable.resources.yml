@@ -19,7 +19,7 @@ resources:
       
   - name: ar-ecscluster
     type: cluster
-    integration: ship-aws
+    integration: ship-ddc #incorrect cluster for aws it is ddc 
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
@@ -52,7 +52,7 @@ resources:
     type: gitRepo
     integration: "github"
     pointer:
-      sourceName: "shiptest-rc-me/sample-script"
+      sourceName: "shiphitchcock1/sample-script"
       branch: master
       #tags:
        # only:
@@ -164,5 +164,5 @@ resources:
   - name: ar-version
     type: version
     seed:
-      versionName: "1.2.123-rc"
+      versionName: "6.1.2"
       
