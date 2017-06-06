@@ -4,6 +4,10 @@ resources:
   - name: ship_dh_cli
     type: cliConfig
     integration: "docker"
+    
+  - name: longnameforresourceinresourcesdotshippabledotyml-ship_dh_cli
+    type: cliConfig
+    integration: "docker"
 
 #CLUSTERS
   
