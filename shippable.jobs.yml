@@ -150,7 +150,7 @@ jobs:
     type: jenkinsJob                  # The type of the job (should not be changed by the user)
     integration: "ship-jenkins"   # The name of your Jenkins integration (created via accountSettings page)
     pointer:
-      sourceName: "firstjob"          # The name of your Jenkins job
+      sourceName: "firstjob1"          # The name of your Jenkins job
     steps:
       - OUT: "ar-files"     
   
