@@ -26,7 +26,7 @@ jobs:
       - NOTIFY: ar-email
       - NOTIFY: ar-slack
     
-  - name: ar-release12345
+  - name: ar-release12345edit12
     type: release
  #   allowPublicAccess: true
     steps:
