@@ -25,7 +25,14 @@ jobs:
     on_failure:
       - NOTIFY: ar-email
       - NOTIFY: ar-slack
-      
+    
+  - name: ar-release
+    type: release
+ #   allowPublicAccess: true
+    steps:
+      - IN: ar-version
+      - TASK: managed
+        bump: rc
 #MANIFESTS
       
   - name: ar-manifest1
