@@ -26,13 +26,14 @@ jobs:
       - NOTIFY: ar-email
       - NOTIFY: ar-slack
     
-  - name: ar-release
+  - name: ar-release123
     type: release
  #   allowPublicAccess: true
     steps:
       - IN: ar-version
       - TASK: managed
         bump: rc
+        
 #MANIFESTS
       
   - name: ar-manifest1
