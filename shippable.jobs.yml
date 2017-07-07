@@ -106,7 +106,7 @@ jobs:
       - TASK:
         - script: ls
         - script: ./IN/ar-samplescript/gitRepo/echo.sh
-        - script: export FOO=foo
+        - script: export FOO=foo1
       - OUT: ar-image2invalidimg
     on_start:
       - NOTIFY: ar-slack
