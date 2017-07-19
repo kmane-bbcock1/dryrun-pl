@@ -57,12 +57,12 @@ jobs:
       - NOTIFY: ar-slack
     allowPublicAccess: true
        
-  - name: ar-manifest2
-    type: manifest
-    steps:
-      - IN: ar-image4invalidformat
-      - IN: ar-image1
-      - IN: ar-image2invalidimg
+ # - name: ar-manifest2
+  #  type: manifest
+  #  steps:
+  #    - IN: ar-image4invalidformat
+  #   - IN: ar-image1
+  #    - IN: ar-image2invalidimg
       
   - name: longnameforjobsinjobsdotshippabledotymlforlongresourcenameasin-ar-manifest1
     type: manifest
