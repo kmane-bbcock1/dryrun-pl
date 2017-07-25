@@ -97,7 +97,7 @@ jobs:
 #RUNSH      
   - name: ar-inrunSh
     type: runSh
-    allowPublicAccess: false
+    allowPublicAccess: true
     steps:
       - IN: ar-samplescript
      # versionName: testsha
@@ -126,7 +126,7 @@ jobs:
 #RUNCLI      
   - name: ar-inrunCLI
     type: runCLI
-    allowPublicAccess: false
+    allowPublicAccess: true
     steps:
       - IN: ar-samplescript
       # versionName: testsha
