@@ -33,13 +33,356 @@ resources:
     pointer:
       sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
       
-  - name: ac-ecscluster
+  - name: ac-ecscluster10
     type: cluster
     integration: ship-aws 
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
   
+  - name: ac-ecscluster20
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster30
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster40
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster50
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster60
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster70
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster80
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster90
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster100
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster110
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster120
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster130
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster140
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster150
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster160
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster170
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster180
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster190
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster200
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster210
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster220
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster230
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster240
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster250
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster260
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster270
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster280
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster290
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster300
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster310
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster320
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster330
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster340
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster350
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster360
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster370
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster380
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster390
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster400
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster410
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster420
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster430
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster440
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster450
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
+  - name: ac-ecscluster460
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster470
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster480
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster490
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+  
+  - name: ac-ecscluster500
+    type: cluster
+    integration: ship-aws 
+    pointer:
+      sourceName : "testCL"
+      region: "us-west-2"
+      
   - name: ac-gkecluster
     type: cluster
     integration: ship-gke
@@ -60,7 +403,7 @@ resources:
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
-  
+      
   - name: ac-dclcluster
     type: cluster
     integration: ship-dcl
