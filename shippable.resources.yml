@@ -13,13 +13,13 @@ resources:
   
   - name: ar-ddccluster
     type: cluster
-    integration: ship-ddc
+    integration: ddc
     pointer:
       sourceName : "nothing" #we can anything because it is mandatory but ddc doesnot have clusters
       
   - name: ar-ecscluster
     type: cluster
-    integration: ship-ddc #incorrect cluster for aws it is ddc 
+    integration: ddc #incorrect cluster for aws it is ddc 
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
@@ -112,7 +112,7 @@ resources:
       
   - name: ar-slack
     type: notification
-    integration: "notify-slack"
+    integration: "slack"
     pointer:
       recipients:
         - "#pipeline-pvt"
