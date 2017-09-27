@@ -7,7 +7,7 @@ jobs:
     steps:
       - IN: ac-samplescript301
       - TASK:
-        - script: ./IN/ar-samplescript301/gitRepo/echo.sh
+        - script: ./IN/ac-samplescript301/gitRepo/echo.sh
         
   - name: ac-inrunCLI301
     type: runCLI
