@@ -1,5 +1,281 @@
 jobs:
-    - name: ac-manifest200
+  - name: aa2-inrunSh1
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  - name: aa2-inrunSh2
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+        
+  - name: aa2-inrunSh3
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh4
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh5
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+
+  - name: aa2-inrunSh6
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+        
+  - name: aa2-inrunSh7
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh8
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh9
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh10
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  - name: aa2-inrunSh11
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  - name: aa2-inrunSh12
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+        
+  - name: aa2-inrunSh13
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh14
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh15
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+
+  - name: aa2-inrunSh16
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+        
+  - name: aa2-inrunSh17
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh18
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh19
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh20
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+  
+  - name: aa2-inrunSh21
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  - name: aa2-inrunSh22
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+        
+  - name: aa2-inrunSh23
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh24
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh25
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+
+  - name: aa2-inrunSh26
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+        
+  - name: aa2-inrunSh27
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh28
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+  
+  - name: aa2-inrunSh29
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+
+        
+  - name: aa2-inrunSh30
+    type: runSh
+    steps:
+      - IN: aa2-gitrepo
+      - TASK:
+        - script: ./IN/aa2-gitrepo/gitRepo/echo.sh
+  
+  - name: aa3-inrunSh1
+    type: runSh
+    steps:
+      - IN: aa3-gitrepo
+      - TASK:
+        - script: ./IN/aa3-gitrepo/gitRepo/echo.sh
+  
+  - name: aa3-inrunSh2
+    type: runSh
+    steps:
+      - IN: aa3-inrunSh1
+      - TASK:
+        - script: ls
+  
+  - name: aa3-inrunSh3
+    type: runSh
+    steps:
+      - IN: aa3-inrunSh2
+      - TASK:
+        - script: ls
+  
+  - name: aa3-inrunSh4
+    type: runSh
+    steps:
+      - IN: aa3-inrunSh3
+      - TASK:
+        - script: ls
+  
+  - name: aa3-inrunSh5
+    type: runSh
+    steps:
+      - IN: aa3-inrunSh4
+      - TASK:
+        - script: ls
+  
+  - name: aa3-inrunSh6
+    type: runSh
+    steps:
+      - IN: aa3-inrunSh5
+      - TASK:
+        - script: ls
+        
+  - name: ac-manifest200
     type: manifest
     steps:
       - IN: ac-image200
