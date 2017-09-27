@@ -274,11 +274,7 @@ jobs:
       - IN: aa3-inrunSh5
       - TASK:
         - script: ls
-        
-  - name: ac-manifest200
-    type: manifest
-    steps:
-      - IN: ac-image200
+
   
   - name: ac-manifest201
     type: manifest
