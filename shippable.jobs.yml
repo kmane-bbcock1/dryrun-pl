@@ -3429,73 +3429,159 @@ jobs:
       - IN: ac-params100
       - IN: ac-dopts100
       
-#RUNSH      
-  - name: ar-inrunSh
+#RUNSH   & runCLI   
+  - name: ac-inrunSh1
     type: runSh
-    allowPublicAccess: true
     steps:
-      - IN: ar-samplescript
-     # versionName: testsha
-      - IN: ar-image3invalidtag
-     #- IN: test-time-1
+      - IN: ac-samplescript1
       - TASK:
-        - script: ls
-        - script: ./IN/ar-samplescript/gitRepo/echo.sh
-        - script: export FOO=foo1
-        - script: echo $FOO
-      - OUT: ar-image2invalidimg
-    on_start:
-      - NOTIFY: ar-slack
-      - NOTIFY: ar-email
-    on_success:
-      - NOTIFY: ar-slack
-      - NOTIFY: ar-email
-      - script: echo 'infra test'
-      - script: echo 'newtesting success'
-    on_failure:
-      - script: echo 'testing1 failure'
-      - script: echo 'failure runSh'
-      - NOTIFY: ar-slack
-      - NOTIFY: ar-email
-
-#RUNCLI      
-  - name: ar-inrunCLI
-    type: runCLI
-    allowPublicAccess: true
-    steps:
-      - IN: ar-samplescript
-      # versionName: testsha
-      - IN: ship_dh_cli
-      - IN: ar-testtime
-      - IN: ar-lb
-      - IN: ar-files
-       #- IN: ar-image3invalidtag
-      #- IN: test-time-1
-      - TASK:
-        - script: ls
-        - script: ./IN/ar-samplescript/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript1/gitRepo/echo.sh
         
-  - name: r1-test1
-    type: release
+  - name: ac-inrunCLI1
+    type: runCLI
     steps:
-      - IN: ar-version
-         #versionName: testrelease
-     # - IN: ar-inrunSh
-      - TASK: managed
-        bump: rc  
+      - IN: ac-samplescript1
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh2
+    type: runSh
+    steps:
+      - IN: ac-samplescript2
+      - TASK:
+        - script: ./IN/ar-samplescript2/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI2
+    type: runCLI
+    steps:
+      - IN: ac-samplescript2
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh3
+    type: runSh
+    steps:
+      - IN: ac-samplescript3
+      - TASK:
+        - script: ./IN/ar-samplescript3/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI3
+    type: runCLI
+    steps:
+      - IN: ac-samplescript3
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh4
+    type: runSh
+    steps:
+      - IN: ac-samplescript4
+      - TASK:
+        - script: ./IN/ar-samplescript4/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI4
+    type: runCLI
+    steps:
+      - IN: ac-samplescript4
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh5
+    type: runSh
+    steps:
+      - IN: ac-samplescript5
+      - TASK:
+        - script: ./IN/ar-samplescript5/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI5
+    type: runCLI
+    steps:
+      - IN: ac-samplescript5
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh6
+    type: runSh
+    steps:
+      - IN: ac-samplescript6
+      - TASK:
+        - script: ./IN/ar-samplescript6/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI6
+    type: runCLI
+    steps:
+      - IN: ac-samplescript6
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh7
+    type: runSh
+    steps:
+      - IN: ac-samplescript7
+      - TASK:
+        - script: ./IN/ar-samplescript7/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI7
+    type: runCLI
+    steps:
+      - IN: ac-samplescript7
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh8
+    type: runSh
+    steps:
+      - IN: ac-samplescript8
+      - TASK:
+        - script: ./IN/ar-samplescript8/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI8
+    type: runCLI
+    steps:
+      - IN: ac-samplescript8
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh9
+    type: runSh
+    steps:
+      - IN: ac-samplescript9
+      - TASK:
+        - script: ./IN/ar-samplescript9/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI9
+    type: runCLI
+    steps:
+      - IN: ac-samplescript9
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh10
+    type: runSh
+    steps:
+      - IN: ac-samplescript10
+      - TASK:
+        - script: ./IN/ar-samplescript10/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI10
+    type: runCLI
+    steps:
+      - IN: ac-samplescript10
+      - TASK:
+        - script: ls
         
 #PROVISION
-  - name: ar-provision                                                  #required
+  - name: ac-provision                                                  #required
     type: provision                                                  #required
     steps:
-      - IN: ar-files 
+      - IN: ac-files 
 
 #JENKINSJOB
-  - name: ar-jenkins                  # a memorable, unique name. this is how your job will be referred to in shippable pipelines
+  - name: ac-jenkins                  # a memorable, unique name. this is how your job will be referred to in shippable pipelines
     type: jenkinsJob                  # The type of the job (should not be changed by the user)
     integration: "ship-jenkins"   # The name of your Jenkins integration (created via accountSettings page)
     pointer:
       sourceName: "firstjob1"          # The name of your Jenkins job
     steps:
-      - OUT: "ar-files"     
+      - OUT: "ac-files"     
    
