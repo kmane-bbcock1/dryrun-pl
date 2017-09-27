@@ -1,2947 +1,2102 @@
 jobs:
-
-#RELEASE
-
-  - name: ac-release
-    type: release
-    allowPublicAccess: true
-    steps:
-      - IN: ac-version
-         #versionName: testrelease
-      - IN: ac-inrunSh1
-      - TASK: managed
-        bump: rc
-       #- IN: ar-tg3
-    flags:
-      - ac-release
-    on_start:
-      - NOTIFY: ac-email
-      - NOTIFY: ac-slack
-       #- NOTIFY: allpl-irc
-    on_success:
-      - NOTIFY: ac-email
-      - NOTIFY: ac-slack
-       #- NOTIFY: allpl-irc
-    on_failure:
-      - NOTIFY: ac-email
-      - NOTIFY: ac-slack
-        
-#MANIFESTS
-      
-  - name: ac-manifest1
+  - name: ac-manifest101
     type: manifest
     steps:
-      - IN: ac-image1
+      - IN: ac-image101
   
-  - name: ac-manifest2
+  - name: ac-manifest102
     type: manifest
     steps:
-      - IN: ac-image2
+      - IN: ac-image102
   
-  - name: ac-manifest3
+  - name: ac-manifest103
     type: manifest
     steps:
-      - IN: ac-image3
+      - IN: ac-image103
   
-  - name: ac-manifest4
+  - name: ac-manifest104
     type: manifest
     steps:
-      - IN: ac-image4
+      - IN: ac-image104
   
-  - name: ac-manifest5
+  - name: ac-manifest105
     type: manifest
     steps:
-      - IN: ac-image5
+      - IN: ac-image105
   
-  - name: ac-manifest6
+  - name: ac-manifest106
     type: manifest
     steps:
-      - IN: ac-image6
+      - IN: ac-image106
   
-  - name: ac-manifest7
+  - name: ac-manifest107
     type: manifest
     steps:
       - IN: ac-image7
   
-  - name: ac-manifest8
+  - name: ac-manifest108
     type: manifest
     steps:
-      - IN: ac-image8
+      - IN: ac-image108
   
-  - name: ac-manifest9
+  - name: ac-manifest109
     type: manifest
     steps:
-      - IN: ac-image9
+      - IN: ac-image109
   
-  - name: ac-manifest10
+  - name: ac-manifest110
     type: manifest
     steps:
-      - IN: ac-image10
+      - IN: ac-image110
   
-  - name: ac-manifest11
+  - name: ac-manifest111
     type: manifest
     steps:
-      - IN: ac-image11
+      - IN: ac-image111
   
-  - name: ac-manifest12
+  - name: ac-manifest112
     type: manifest
     steps:
-      - IN: ac-image12
+      - IN: ac-image112
   
-  - name: ac-manifest13
+  - name: ac-manifest113
     type: manifest
     steps:
-      - IN: ac-image13
+      - IN: ac-image113
   
-  - name: ac-manifest14
+  - name: ac-manifest114
     type: manifest
     steps:
-      - IN: ac-image14
+      - IN: ac-image114
   
-  - name: ac-manifest15
+  - name: ac-manifest115
     type: manifest
     steps:
-      - IN: ac-image15
+      - IN: ac-image115
   
-  - name: ac-manifest16
+  - name: ac-manifest116
     type: manifest
     steps:
-      - IN: ac-image16
+      - IN: ac-image116
   
-  - name: ac-manifest17
+  - name: ac-manifest117
     type: manifest
     steps:
-      - IN: ac-image17
+      - IN: ac-image117
   
-  - name: ac-manifest18
+  - name: ac-manifest118
     type: manifest
     steps:
-      - IN: ac-image18
+      - IN: ac-image118
   
-  - name: ac-manifest19
+  - name: ac-manifest119
     type: manifest
     steps:
-      - IN: ac-image19
+      - IN: ac-image119
   
-  - name: ac-manifest20
+  - name: ac-manifest120
     type: manifest
     steps:
-      - IN: ac-image20
+      - IN: ac-image120
   
-  - name: ac-manifest21
+  - name: ac-manifest121
     type: manifest
     steps:
-      - IN: ac-image21
+      - IN: ac-image121
   
-  - name: ac-manifest22
+  - name: ac-manifest122
     type: manifest
     steps:
-      - IN: ac-image22
+      - IN: ac-image122
   
-  - name: ac-manifest23
+  - name: ac-manifest123
     type: manifest
     steps:
-      - IN: ac-image23
+      - IN: ac-image123
   
-  - name: ac-manifest24
+  - name: ac-manifest124
     type: manifest
     steps:
-      - IN: ac-image24
+      - IN: ac-image124
   
-  - name: ac-manifest25
+  - name: ac-manifest125
     type: manifest
     steps:
-      - IN: ac-image25
+      - IN: ac-image125
   
-  - name: ac-manifest26
+  - name: ac-manifest126
     type: manifest
     steps:
-      - IN: ac-image26
+      - IN: ac-image126
   
-  - name: ac-manifest27
+  - name: ac-manifest127
     type: manifest
     steps:
-      - IN: ac-image27
+      - IN: ac-image127
   
-  - name: ac-manifest28
+  - name: ac-manifest128
     type: manifest
     steps:
-      - IN: ac-image28
+      - IN: ac-image128
   
-  - name: ac-manifest29
+  - name: ac-manifest129
     type: manifest
     steps:
-      - IN: ac-image29
+      - IN: ac-image129
   
-  - name: ac-manifest30
+  - name: ac-manifest130
     type: manifest
     steps:
-      - IN: ac-image30
+      - IN: ac-image130
   
-  - name: ac-manifest31
+  - name: ac-manifest131
     type: manifest
     steps:
-      - IN: ac-image31
+      - IN: ac-image131
   
-  - name: ac-manifest32
+  - name: ac-manifest132
     type: manifest
     steps:
-      - IN: ac-image32
+      - IN: ac-image132
   
-  - name: ac-manifest33
+  - name: ac-manifest133
     type: manifest
     steps:
-      - IN: ac-image33
+      - IN: ac-image133
   
-  - name: ac-manifest34
+  - name: ac-manifest134
     type: manifest
     steps:
-      - IN: ac-image34
+      - IN: ac-image134
   
-  - name: ac-manifest35
+  - name: ac-manifest135
     type: manifest
     steps:
-      - IN: ac-image35
+      - IN: ac-image135
   
-  - name: ac-manifest36
+  - name: ac-manifest136
     type: manifest
     steps:
-      - IN: ac-image36
+      - IN: ac-image136
   
-  - name: ac-manifest37
+  - name: ac-manifest137
     type: manifest
     steps:
-      - IN: ac-image37
+      - IN: ac-image137
   
-  - name: ac-manifest38
+  - name: ac-manifest138
     type: manifest
     steps:
-      - IN: ac-image38
+      - IN: ac-image138
   
-  - name: ac-manifest39
+  - name: ac-manifest139
     type: manifest
     steps:
-      - IN: ac-image39
+      - IN: ac-image139
   
-  - name: ac-manifest40
+  - name: ac-manifest140
     type: manifest
     steps:
-      - IN: ac-image40
+      - IN: ac-image140
       
-  - name: ac-manifest41
+  - name: ac-manifest141
     type: manifest
     steps:
-      - IN: ac-image41
+      - IN: ac-image141
   
-  - name: ac-manifest42
+  - name: ac-manifest142
     type: manifest
     steps:
-      - IN: ac-image42
+      - IN: ac-image142
   
-  - name: ac-manifest43
+  - name: ac-manifest143
     type: manifest
     steps:
-      - IN: ac-image43
+      - IN: ac-image143
   
-  - name: ac-manifest44
+  - name: ac-manifest144
     type: manifest
     steps:
-      - IN: ac-image44
+      - IN: ac-image144
   
-  - name: ac-manifest45
+  - name: ac-manifest145
     type: manifest
     steps:
-      - IN: ac-image45
+      - IN: ac-image145
   
-  - name: ac-manifest46
+  - name: ac-manifest146
     type: manifest
     steps:
-      - IN: ac-image46
+      - IN: ac-image146
   
-  - name: ac-manifest47
+  - name: ac-manifest147
     type: manifest
     steps:
-      - IN: ac-image47
+      - IN: ac-image147
   
-  - name: ac-manifest48
+  - name: ac-manifest148
     type: manifest
     steps:
-      - IN: ac-image48
+      - IN: ac-image148
   
-  - name: ac-manifest49
+  - name: ac-manifest149
     type: manifest
     steps:
-      - IN: ac-image49
+      - IN: ac-image149
   
-  - name: ac-manifest50
+  - name: ac-manifest150
     type: manifest
     steps:
-      - IN: ac-image50
+      - IN: ac-image150
   
-  - name: ac-manifest51
+  - name: ac-manifest151
     type: manifest
     steps:
-      - IN: ac-image51
+      - IN: ac-image151
   
-  - name: ac-manifest52
+  - name: ac-manifest152
     type: manifest
     steps:
-      - IN: ac-image52
+      - IN: ac-image152
   
-  - name: ac-manifest53
+  - name: ac-manifest153
     type: manifest
     steps:
-      - IN: ac-image53
+      - IN: ac-image153
   
-  - name: ac-manifest54
+  - name: ac-manifest154
     type: manifest
     steps:
-      - IN: ac-image54
+      - IN: ac-image154
   
-  - name: ac-manifest55
+  - name: ac-manifest155
     type: manifest
     steps:
-      - IN: ac-image55
+      - IN: ac-image155
   
-  - name: ac-manifest56
+  - name: ac-manifest156
     type: manifest
     steps:
-      - IN: ac-image56
+      - IN: ac-image156
   
-  - name: ac-manifest57
+  - name: ac-manifest157
     type: manifest
     steps:
-      - IN: ac-image57
+      - IN: ac-image157
   
-  - name: ac-manifest58
+  - name: ac-manifest158
     type: manifest
     steps:
-      - IN: ac-image58
+      - IN: ac-image158
   
-  - name: ac-manifest59
+  - name: ac-manifest159
     type: manifest
     steps:
-      - IN: ac-image59
+      - IN: ac-image159
   
-  - name: ac-manifest60
+  - name: ac-manifest160
     type: manifest
     steps:
-      - IN: ac-image60
+      - IN: ac-image160
   
-  - name: ac-manifest61
+  - name: ac-manifest161
     type: manifest
     steps:
-      - IN: ac-image61
+      - IN: ac-image161
   
-  - name: ac-manifest62
+  - name: ac-manifest162
     type: manifest
     steps:
-      - IN: ac-image62
+      - IN: ac-image162
   
-  - name: ac-manifest63
+  - name: ac-manifest163
     type: manifest
     steps:
-      - IN: ac-image63
+      - IN: ac-image163
   
-  - name: ac-manifest64
+  - name: ac-manifest164
     type: manifest
     steps:
-      - IN: ac-image64
+      - IN: ac-image164
   
-  - name: ac-manifest65
+  - name: ac-manifest165
     type: manifest
     steps:
-      - IN: ac-image65
+      - IN: ac-image165
   
-  - name: ac-manifest66
+  - name: ac-manifest166
     type: manifest
     steps:
-      - IN: ac-image66
+      - IN: ac-image166
   
-  - name: ac-manifest67
+  - name: ac-manifest167
     type: manifest
     steps:
-      - IN: ac-image67
+      - IN: ac-image167
   
-  - name: ac-manifest68
+  - name: ac-manifest168
     type: manifest
     steps:
-      - IN: ac-image68
+      - IN: ac-image168
   
-  - name: ac-manifest69
+  - name: ac-manifest169
     type: manifest
     steps:
-      - IN: ac-image69
+      - IN: ac-image169
   
-  - name: ac-manifest70
+  - name: ac-manifest170
     type: manifest
     steps:
-      - IN: ac-image70
+      - IN: ac-image170
   
-  - name: ac-manifest71
+  - name: ac-manifest171
     type: manifest
     steps:
-      - IN: ac-image71
+      - IN: ac-image171
   
-  - name: ac-manifest72
+  - name: ac-manifest172
     type: manifest
     steps:
-      - IN: ac-image72
+      - IN: ac-image172
   
-  - name: ac-manifest73
+  - name: ac-manifest173
     type: manifest
     steps:
-      - IN: ac-image73
+      - IN: ac-image173
   
-  - name: ac-manifest74
+  - name: ac-manifest174
     type: manifest
     steps:
-      - IN: ac-image74
+      - IN: ac-image174
   
-  - name: ac-manifest75
+  - name: ac-manifest175
     type: manifest
     steps:
-      - IN: ac-image75
+      - IN: ac-image175
   
-  - name: ac-manifest76
+  - name: ac-manifest176
     type: manifest
     steps:
-      - IN: ac-image76
+      - IN: ac-image176
   
-  - name: ac-manifest77
+  - name: ac-manifest177
     type: manifest
     steps:
-      - IN: ac-image77
+      - IN: ac-image177
   
-  - name: ac-manifest78
+  - name: ac-manifest178
     type: manifest
     steps:
-      - IN: ac-image78
+      - IN: ac-image178
   
-  - name: ac-manifest79
+  - name: ac-manifest179
     type: manifest
     steps:
-      - IN: ac-image79
+      - IN: ac-image179
   
-  - name: ac-manifest80
+  - name: ac-manifest180
     type: manifest
     steps:
-      - IN: ac-image80
+      - IN: ac-image180
   
-  - name: ac-manifest81
+  - name: ac-manifest181
     type: manifest
     steps:
-      - IN: ac-image81
+      - IN: ac-image181
   
-  - name: ac-manifest82
+  - name: ac-manifest182
     type: manifest
     steps:
-      - IN: ac-image82
+      - IN: ac-image182
   
-  - name: ac-manifest83
+  - name: ac-manifest183
     type: manifest
     steps:
-      - IN: ac-image83
+      - IN: ac-image183
   
-  - name: ac-manifest84
+  - name: ac-manifest184
     type: manifest
     steps:
-      - IN: ac-image84
+      - IN: ac-image184
   
-  - name: ac-manifest85
+  - name: ac-manifest185
     type: manifest
     steps:
-      - IN: ac-image85
+      - IN: ac-image185
   
-  - name: ac-manifest86
+  - name: ac-manifest186
     type: manifest
     steps:
-      - IN: ac-image86
+      - IN: ac-image186
   
-  - name: ac-manifest87
+  - name: ac-manifest187
     type: manifest
     steps:
-      - IN: ac-image87
+      - IN: ac-image187
   
-  - name: ac-manifest88
+  - name: ac-manifest188
     type: manifest
     steps:
-      - IN: ac-image88
+      - IN: ac-image188
   
-  - name: ac-manifest89
+  - name: ac-manifest189
     type: manifest
     steps:
-      - IN: ac-image89
+      - IN: ac-image189
   
-  - name: ac-manifest90
+  - name: ac-manifest190
     type: manifest
     steps:
-      - IN: ac-image90
+      - IN: ac-image190
   
-  - name: ac-manifest91
+  - name: ac-manifest191
     type: manifest
     steps:
-      - IN: ac-image91
+      - IN: ac-image191
   
-  - name: ac-manifest92
+  - name: ac-manifest192
     type: manifest
     steps:
-      - IN: ac-image92
+      - IN: ac-image192
   
-  - name: ac-manifest93
+  - name: ac-manifest193
     type: manifest
     steps:
-      - IN: ac-image93
+      - IN: ac-image193
   
-  - name: ac-manifest94
+  - name: ac-manifest194
     type: manifest
     steps:
-      - IN: ac-image94
+      - IN: ac-image194
   
-  - name: ac-manifest95
+  - name: ac-manifest195
     type: manifest
     steps:
-      - IN: ac-image95
+      - IN: ac-image195
   
-  - name: ac-manifest96
+  - name: ac-manifest196
     type: manifest
     steps:
-      - IN: ac-image96
+      - IN: ac-image196
   
-  - name: ac-manifest97
+  - name: ac-manifest197
     type: manifest
     steps:
-      - IN: ac-image97
+      - IN: ac-image197
   
-  - name: ac-manifest98
+  - name: ac-manifest198
     type: manifest
     steps:
-      - IN: ac-image98
+      - IN: ac-image198
   
-  - name: ac-manifest99
+  - name: ac-manifest199
     type: manifest
     steps:
-      - IN: ac-image99
+      - IN: ac-image199
   
-  - name: ac-manifest100
+  - name: ac-manifest200
     type: manifest
     steps:
-      - IN: ac-image100
-  
-#DEPLOY  
-  - name: ac-ecsdeploy1
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest1
-        switch: off
-      - IN: ac-params1
-      - IN: ac-dopts1
-      
-  - name: ac-ecsdeploy2
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest2
-        switch: off
-      - IN: ac-params2
-      - IN: ac-dopts2
-  
-  - name: ac-ecsdeploy3
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest3
-        switch: off
-      - IN: ac-params3
-      - IN: ac-dopts3
-  
-  - name: ac-ecsdeploy4
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest4
-        switch: off
-      - IN: ac-params4
-      - IN: ac-dopts4
-      
-  - name: ac-ecsdeploy5
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest5
-        switch: off
-      - IN: ac-params5
-      - IN: ac-dopts5
-      
-  - name: ac-ecsdeploy6
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest6
-        switch: off
-      - IN: ac-params6
-      - IN: ac-dopts6
-      
-  - name: ac-ecsdeploy7
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest7
-        switch: off
-      - IN: ac-params7
-      - IN: ac-dopts7
-  
-  - name: ac-ecsdeploy8
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest8
-        switch: off
-      - IN: ac-params8
-      - IN: ac-dopts8
-  
-  - name: ac-ecsdeploy9
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest9
-        switch: off
-      - IN: ac-params9
-      - IN: ac-dopts9
-      
-  - name: ac-ecsdeploy10
-    type: deploy
-    steps:
-      - IN: ac-ecscluster10
-      - IN: ac-manifest10
-        switch: off
-      - IN: ac-params10
-      - IN: ac-dopts10
-  
-  - name: ac-ecsdeploy11
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest11
-        switch: off
-      - IN: ac-params11
-      - IN: ac-dopts11
-      
-  - name: ac-ecsdeploy12
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest12
-        switch: off
-      - IN: ac-params12
-      - IN: ac-dopts12
-  
-  - name: ac-ecsdeploy13
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest13
-        switch: off
-      - IN: ac-params13
-      - IN: ac-dopts13
-  
-  - name: ac-ecsdeploy14
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest14
-        switch: off
-      - IN: ac-params14
-      - IN: ac-dopts14
-      
-  - name: ac-ecsdeploy15
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest15
-        switch: off
-      - IN: ac-params15
-      - IN: ac-dopts15
-      
-  - name: ac-ecsdeploy16
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest16
-        switch: off
-      - IN: ac-params16
-      - IN: ac-dopts16
-      
-  - name: ac-ecsdeploy17
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest17
-        switch: off
-      - IN: ac-params17
-      - IN: ac-dopts17
-  
-  - name: ac-ecsdeploy18
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest18
-        switch: off
-      - IN: ac-params18
-      - IN: ac-dopts18
-  
-  - name: ac-ecsdeploy19
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest19
-        switch: off
-      - IN: ac-params19
-      - IN: ac-dopts19
-      
-  - name: ac-ecsdeploy20
-    type: deploy
-    steps:
-      - IN: ac-ecscluster20
-      - IN: ac-manifest20
-        switch: off
-      - IN: ac-params20
-      - IN: ac-dopts20
-      
-  - name: ac-ecsdeploy21
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest21
-        switch: off
-      - IN: ac-params21
-      - IN: ac-dopts21
-      
-  - name: ac-ecsdeploy22
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest22
-        switch: off
-      - IN: ac-params22
-      - IN: ac-dopts22
-  
-  - name: ac-ecsdeploy23
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest23
-        switch: off
-      - IN: ac-params23
-      - IN: ac-dopts23
-  
-  - name: ac-ecsdeploy24
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest24
-        switch: off
-      - IN: ac-params24
-      - IN: ac-dopts24
-      
-  - name: ac-ecsdeploy25
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest25
-        switch: off
-      - IN: ac-params25
-      - IN: ac-dopts25
-      
-  - name: ac-ecsdeploy26
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest26
-        switch: off
-      - IN: ac-params26
-      - IN: ac-dopts26
-      
-  - name: ac-ecsdeploy27
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest27
-        switch: off
-      - IN: ac-params27
-      - IN: ac-dopts27
-  
-  - name: ac-ecsdeploy28
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest28
-        switch: off
-      - IN: ac-params28
-      - IN: ac-dopts28
-  
-  - name: ac-ecsdeploy29
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest29
-        switch: off
-      - IN: ac-params29
-      - IN: ac-dopts29
-      
-  - name: ac-ecsdeploy30
-    type: deploy
-    steps:
-      - IN: ac-ecscluster30
-      - IN: ac-manifest30
-        switch: off
-      - IN: ac-params30
-      - IN: ac-dopts30
-      
-  - name: ac-ecsdeploy31
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest31
-        switch: off
-      - IN: ac-params31
-      - IN: ac-dopts31
-      
-  - name: ac-ecsdeploy32
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest32
-        switch: off
-      - IN: ac-params32
-      - IN: ac-dopts32
-  
-  - name: ac-ecsdeploy33
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest33
-        switch: off
-      - IN: ac-params33
-      - IN: ac-dopts33
-  
-  - name: ac-ecsdeploy34
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest34
-        switch: off
-      - IN: ac-params34
-      - IN: ac-dopts34
-      
-  - name: ac-ecsdeploy35
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest35
-        switch: off
-      - IN: ac-params35
-      - IN: ac-dopts35
-      
-  - name: ac-ecsdeploy36
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest36
-        switch: off
-      - IN: ac-params36
-      - IN: ac-dopts36
-      
-  - name: ac-ecsdeploy37
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest37
-        switch: off
-      - IN: ac-params37
-      - IN: ac-dopts37
-  
-  - name: ac-ecsdeploy38
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest38
-        switch: off
-      - IN: ac-params38
-      - IN: ac-dopts38
-  
-  - name: ac-ecsdeploy39
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest39
-        switch: off
-      - IN: ac-params39
-      - IN: ac-dopts39
-      
-  - name: ac-ecsdeploy40
-    type: deploy
-    steps:
-      - IN: ac-ecscluster40
-      - IN: ac-manifest40
-        switch: off
-      - IN: ac-params40
-      - IN: ac-dopts40
-  
-  - name: ac-ecsdeploy41
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest41
-        switch: off
-      - IN: ac-params41
-      - IN: ac-dopts41
-      
-  - name: ac-ecsdeploy42
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest42
-        switch: off
-      - IN: ac-params42
-      - IN: ac-dopts42
-  
-  - name: ac-ecsdeploy43
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest43
-        switch: off
-      - IN: ac-params43
-      - IN: ac-dopts43
-  
-  - name: ac-ecsdeploy44
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest44
-        switch: off
-      - IN: ac-params44
-      - IN: ac-dopts44
-      
-  - name: ac-ecsdeploy45
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest45
-        switch: off
-      - IN: ac-params45
-      - IN: ac-dopts45
-      
-  - name: ac-ecsdeploy56
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest46
-        switch: off
-      - IN: ac-params46
-      - IN: ac-dopts46
-      
-  - name: ac-ecsdeploy47
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest47
-        switch: off
-      - IN: ac-params47
-      - IN: ac-dopts47
-  
-  - name: ac-ecsdeploy48
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest48
-        switch: off
-      - IN: ac-params48
-      - IN: ac-dopts48
-  
-  - name: ac-ecsdeploy49
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest49
-        switch: off
-      - IN: ac-params49
-      - IN: ac-dopts49
-      
-  - name: ac-ecsdeploy50
-    type: deploy
-    steps:
-      - IN: ac-ecscluster50
-      - IN: ac-manifest50
-        switch: off
-      - IN: ac-params50
-      - IN: ac-dopts50
-  
-  - name: ac-ecsdeploy51
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest51
-        switch: off
-      - IN: ac-params51
-      - IN: ac-dopts51
-      
-  - name: ac-ecsdeploy52
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest52
-        switch: off
-      - IN: ac-params52
-      - IN: ac-dopts52
-  
-  - name: ac-ecsdeploy53
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest53
-        switch: off
-      - IN: ac-params53
-      - IN: ac-dopts53
-  
-  - name: ac-ecsdeploy54
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest54
-        switch: off
-      - IN: ac-params54
-      - IN: ac-dopts54
-      
-  - name: ac-ecsdeploy55
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest55
-        switch: off
-      - IN: ac-params55
-      - IN: ac-dopts55
-      
-  - name: ac-ecsdeploy56
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest56
-        switch: off
-      - IN: ac-params56
-      - IN: ac-dopts56
-      
-  - name: ac-ecsdeploy57
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest57
-        switch: off
-      - IN: ac-params57
-      - IN: ac-dopts57
-  
-  - name: ac-ecsdeploy58
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest58
-        switch: off
-      - IN: ac-params58
-      - IN: ac-dopts58
-  
-  - name: ac-ecsdeploy59
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest59
-        switch: off
-      - IN: ac-params59
-      - IN: ac-dopts59
-      
-  - name: ac-ecsdeploy60
-    type: deploy
-    steps:
-      - IN: ac-ecscluster60
-      - IN: ac-manifest60
-        switch: off
-      - IN: ac-params60
-      - IN: ac-dopts60
-  
-  - name: ac-ecsdeploy61
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest61
-        switch: off
-      - IN: ac-params61
-      - IN: ac-dopts61
-      
-  - name: ac-ecsdeploy62
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest62
-        switch: off
-      - IN: ac-params62
-      - IN: ac-dopts62
-  
-  - name: ac-ecsdeploy63
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest63
-        switch: off
-      - IN: ac-params63
-      - IN: ac-dopts63
-  
-  - name: ac-ecsdeploy64
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest64
-        switch: off
-      - IN: ac-params64
-      - IN: ac-dopts64
-      
-  - name: ac-ecsdeploy65
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest65
-        switch: off
-      - IN: ac-params65
-      - IN: ac-dopts65
-      
-  - name: ac-ecsdeploy66
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest66
-        switch: off
-      - IN: ac-params66
-      - IN: ac-dopts66
-      
-  - name: ac-ecsdeploy67
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest67
-        switch: off
-      - IN: ac-params67
-      - IN: ac-dopts67
-  
-  - name: ac-ecsdeploy68
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest68
-        switch: off
-      - IN: ac-params68
-      - IN: ac-dopts68
-  
-  - name: ac-ecsdeploy69
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest69
-        switch: off
-      - IN: ac-params69
-      - IN: ac-dopts69
-      
-  - name: ac-ecsdeploy70
-    type: deploy
-    steps:
-      - IN: ac-ecscluster70
-      - IN: ac-manifest70
-        switch: off
-      - IN: ac-params70
-      - IN: ac-dopts70
-  
-  - name: ac-ecsdeploy71
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest71
-        switch: off
-      - IN: ac-params71
-      - IN: ac-dopts71
-      
-  - name: ac-ecsdeploy72
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest72
-        switch: off
-      - IN: ac-params72
-      - IN: ac-dopts72
-  
-  - name: ac-ecsdeploy73
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest73
-        switch: off
-      - IN: ac-params73
-      - IN: ac-dopts73
-  
-  - name: ac-ecsdeploy74
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest74
-        switch: off
-      - IN: ac-params74
-      - IN: ac-dopts74
-      
-  - name: ac-ecsdeploy75
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest75
-        switch: off
-      - IN: ac-params75
-      - IN: ac-dopts75
-      
-  - name: ac-ecsdeploy76
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest76
-        switch: off
-      - IN: ac-params76
-      - IN: ac-dopts76
-      
-  - name: ac-ecsdeploy77
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest77
-        switch: off
-      - IN: ac-params77
-      - IN: ac-dopts77
-  
-  - name: ac-ecsdeploy78
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest78
-        switch: off
-      - IN: ac-params78
-      - IN: ac-dopts78
-  
-  - name: ac-ecsdeploy79
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest79
-        switch: off
-      - IN: ac-params79
-      - IN: ac-dopts79
-      
-  - name: ac-ecsdeploy80
-    type: deploy
-    steps:
-      - IN: ac-ecscluster80
-      - IN: ac-manifest80
-        switch: off
-      - IN: ac-params80
-      - IN: ac-dopts80
-  
-  - name: ac-ecsdeploy81
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest81
-        switch: off
-      - IN: ac-params81
-      - IN: ac-dopts81
-      
-  - name: ac-ecsdeploy82
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest82
-        switch: off
-      - IN: ac-params82
-      - IN: ac-dopts82
-  
-  - name: ac-ecsdeploy83
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest83
-        switch: off
-      - IN: ac-params83
-      - IN: ac-dopts83
-  
-  - name: ac-ecsdeploy84
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest84
-        switch: off
-      - IN: ac-params84
-      - IN: ac-dopts84
-      
-  - name: ac-ecsdeploy85
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest85
-        switch: off
-      - IN: ac-params85
-      - IN: ac-dopts85
-      
-  - name: ac-ecsdeploy86
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest86
-        switch: off
-      - IN: ac-params86
-      - IN: ac-dopts86
-      
-  - name: ac-ecsdeploy87
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest87
-        switch: off
-      - IN: ac-params87
-      - IN: ac-dopts87
-  
-  - name: ac-ecsdeploy88
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest88
-        switch: off
-      - IN: ac-params88
-      - IN: ac-dopts88
-  
-  - name: ac-ecsdeploy89
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest89
-        switch: off
-      - IN: ac-params89
-      - IN: ac-dopts89
-      
-  - name: ac-ecsdeploy90
-    type: deploy
-    steps:
-      - IN: ac-ecscluster90
-      - IN: ac-manifest90
-        switch: off
-      - IN: ac-params90
-      - IN: ac-dopts90
-  
-  - name: ac-ecsdeploy91
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest91
-        switch: off
-      - IN: ac-params91
-      - IN: ac-dopts91
-      
-  - name: ac-ecsdeploy92
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest92
-        switch: off
-      - IN: ac-params92
-      - IN: ac-dopts92
-  
-  - name: ac-ecsdeploy93
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest93
-        switch: off
-      - IN: ac-params93
-      - IN: ac-dopts93
-  
-  - name: ac-ecsdeploy94
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest94
-        switch: off
-      - IN: ac-params94
-      - IN: ac-dopts94
-      
-  - name: ac-ecsdeploy95
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest95
-        switch: off
-      - IN: ac-params95
-      - IN: ac-dopts95
-      
-  - name: ac-ecsdeploy96
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest96
-        switch: off
-      - IN: ac-params96
-      - IN: ac-dopts96
-      
-  - name: ac-ecsdeploy97
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest97
-        switch: off
-      - IN: ac-params97
-      - IN: ac-dopts97
-  
-  - name: ac-ecsdeploy98
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest98
-        switch: off
-      - IN: ac-params98
-      - IN: ac-dopts98
-  
-  - name: ac-ecsdeploy99
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest99
-        switch: off
-      - IN: ac-params99
-      - IN: ac-dopts99
-      
-  - name: ac-ecsdeploy100
-    type: deploy
-    steps:
-      - IN: ac-ecscluster100
-      - IN: ac-manifest100
-        switch: off
-      - IN: ac-params100
-      - IN: ac-dopts100
-      
-#RUNSH   & runCLI   
-  - name: ac-inrunSh1
-    type: runSh
-    steps:
-      - IN: ac-samplescript1
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript1/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI1
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh1
-      - TASK:
-        - script: ls
+      - IN: ac-image200
 
-  - name: ac-inrunSh2
-    type: runSh
-    steps:
-      - IN: ac-samplescript2
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript2/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI2
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh2
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh3
-    type: runSh
-    steps:
-      - IN: ac-samplescript3
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript3/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI3
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh3
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh4
-    type: runSh
-    steps:
-      - IN: ac-samplescript4
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript4/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI4
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh4
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh5
-    type: runSh
-    steps:
-      - IN: ac-samplescript5
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript5/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI5
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh5
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh6
-    type: runSh
-    steps:
-      - IN: ac-samplescript6
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript6/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI6
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh6
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh7
-    type: runSh
-    steps:
-      - IN: ac-samplescript7
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript7/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI7
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh7
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh8
-    type: runSh
-    steps:
-      - IN: ac-samplescript8
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript8/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI8
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh8
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh9
-    type: runSh
-    steps:
-      - IN: ac-samplescript9
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript9/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI9
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh9
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh10
-    type: runSh
-    steps:
-      - IN: ac-samplescript10
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript10/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI10
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh10
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh11
-    type: runSh
-    steps:
-      - IN: ac-samplescript11
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript11/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI11
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh11
-      - TASK:
-        - script: ls
 
-  - name: ac-inrunSh12
+  - name: ac-inrunSh101
     type: runSh
     steps:
-      - IN: ac-samplescript12
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript101
+      - IN: ac-params101
       - TASK:
-        - script: ./IN/ar-samplescript12/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript101/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI12
+  - name: ac-inrunCLI101
     type: runCLI
     steps:
-      - IN: ac-inrunSh12
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh13
-    type: runSh
-    steps:
-      - IN: ac-samplescript13
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript13/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI13
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh13
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh14
-    type: runSh
-    steps:
-      - IN: ac-samplescript14
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript14/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI14
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh4
+      - IN: ac-inrunSh101
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh15
+  - name: ac-inrunSh102
     type: runSh
     steps:
-      - IN: ac-samplescript15
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript102
+      - IN: ac-params102
       - TASK:
-        - script: ./IN/ar-samplescript15/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript102/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI15
+  - name: ac-inrunCLI102
     type: runCLI
     steps:
-      - IN: ac-inrunSh15
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh16
-    type: runSh
-    steps:
-      - IN: ac-samplescript16
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript16/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI16
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh16
+      - IN: ac-inrunSh102
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh17
+  - name: ac-inrunSh103
     type: runSh
     steps:
-      - IN: ac-samplescript17
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript103
+      - IN: ac-params101
       - TASK:
-        - script: ./IN/ar-samplescript17/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript103/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI17
+  - name: ac-inrunCLI103
     type: runCLI
     steps:
-      - IN: ac-inrunSh17
+      - IN: ac-inrunSh103
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh104
+    type: runSh
+    steps:
+      - IN: ac-samplescript104
+      - IN: ac-params104
+      - TASK:
+        - script: ./IN/ar-samplescript104/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI104
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh104
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh105
+    type: runSh
+    steps:
+      - IN: ac-samplescript105
+      - IN: ac-params105
+      - TASK:
+        - script: ./IN/ar-samplescript105/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI105
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh105
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh18
+  - name: ac-inrunSh106
     type: runSh
     steps:
-      - IN: ac-samplescript18
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript106
+      - IN: ac-params106
       - TASK:
-        - script: ./IN/ar-samplescript18/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript106/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI18
+  - name: ac-inrunCLI106
     type: runCLI
     steps:
-      - IN: ac-inrunSh18
+      - IN: ac-inrunSh106
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh19
+        
+  - name: ac-inrunSh107
     type: runSh
     steps:
-      - IN: ac-samplescript19
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript107
+      - IN: ac-params107
       - TASK:
-        - script: ./IN/ar-samplescript19/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript107/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI19
+  - name: ac-inrunCLI107
     type: runCLI
     steps:
-      - IN: ac-inrunSh19
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh20
-    type: runSh
-    steps:
-      - IN: ac-samplescript20
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript20/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI20
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh20
+      - IN: ac-inrunSh107
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh21
+  - name: ac-inrunSh108
     type: runSh
     steps:
-      - IN: ac-samplescript21
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript108
+      - IN: ac-params108
       - TASK:
-        - script: ./IN/ar-samplescript21/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript108/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI21
+  - name: ac-inrunCLI108
     type: runCLI
     steps:
-      - IN: ac-inrunSh21
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh22
-    type: runSh
-    steps:
-      - IN: ac-samplescript22
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript22/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI22
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh22
+      - IN: ac-inrunSh108
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh23
+  - name: ac-inrunSh109
     type: runSh
     steps:
-      - IN: ac-samplescript23
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript109
+      - IN: ac-params109
       - TASK:
-        - script: ./IN/ar-samplescript23/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript109/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI23
+  - name: ac-inrunCLI109
     type: runCLI
     steps:
-      - IN: ac-inrunSh23
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh24
-    type: runSh
-    steps:
-      - IN: ac-samplescript24
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript24/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI24
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh24
+      - IN: ac-inrunSh109
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh25
+  - name: ac-inrunSh110
     type: runSh
     steps:
-      - IN: ac-samplescript25
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript110
+      - IN: ac-params110
       - TASK:
-        - script: ./IN/ar-samplescript25/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript110/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI25
+  - name: ac-inrunCLI110
     type: runCLI
     steps:
-      - IN: ac-inrunSh25
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh26
-    type: runSh
-    steps:
-      - IN: ac-samplescript26
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript26/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI26
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh26
+      - IN: ac-inrunSh110
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh27
+  - name: ac-inrunSh111
     type: runSh
     steps:
-      - IN: ac-samplescript27
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript111
+      - IN: ac-params111
       - TASK:
-        - script: ./IN/ar-samplescript27/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript111/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI27
+  - name: ac-inrunCLI111
     type: runCLI
     steps:
-      - IN: ac-inrunSh27
+      - IN: ac-inrunSh111
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh28
+        
+  - name: ac-inrunSh112
     type: runSh
     steps:
-      - IN: ac-samplescript28
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript112
+      - IN: ac-params112
       - TASK:
-        - script: ./IN/ar-samplescript8/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript112/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI28
+  - name: ac-inrunCLI112
     type: runCLI
     steps:
-      - IN: ac-inrunSh28
+      - IN: ac-inrunSh112
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh29
+        
+  - name: ac-inrunSh113
     type: runSh
     steps:
-      - IN: ac-samplescript29
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript113
+      - IN: ac-params111
       - TASK:
-        - script: ./IN/ar-samplescript29/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript113/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI29
+  - name: ac-inrunCLI113
     type: runCLI
     steps:
-      - IN: ac-inrunSh29
+      - IN: ac-inrunSh113
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh30
+        
+  - name: ac-inrunSh114
     type: runSh
     steps:
-      - IN: ac-samplescript30
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript114
+      - IN: ac-params114
       - TASK:
-        - script: ./IN/ar-samplescript30/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript114/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI30
+  - name: ac-inrunCLI114
     type: runCLI
     steps:
-      - IN: ac-inrunSh30
+      - IN: ac-inrunSh114
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh115
+    type: runSh
+    steps:
+      - IN: ac-samplescript115
+      - IN: ac-params115
+      - TASK:
+        - script: ./IN/ar-samplescript115/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI115
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh115
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh31
+  - name: ac-inrunSh116
     type: runSh
     steps:
-      - IN: ac-samplescript31
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript116
+      - IN: ac-params116
       - TASK:
-        - script: ./IN/ar-samplescript31/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript116/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI31
+  - name: ac-inrunCLI116
     type: runCLI
     steps:
-      - IN: ac-inrunSh31
+      - IN: ac-inrunSh116
       - TASK:
         - script: ls
-
-  - name: ac-inrunSh32
+        
+  - name: ac-inrunSh117
     type: runSh
     steps:
-      - IN: ac-samplescript32
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript117
+      - IN: ac-params117
       - TASK:
-        - script: ./IN/ar-samplescript32/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript107/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI32
+  - name: ac-inrunCLI117
     type: runCLI
     steps:
-      - IN: ac-inrunSh32
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh33
-    type: runSh
-    steps:
-      - IN: ac-samplescript33
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript33/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI33
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh33
+      - IN: ac-inrunSh117
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh34
+  - name: ac-inrunSh118
     type: runSh
     steps:
-      - IN: ac-samplescript34
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript118
+      - IN: ac-params118
       - TASK:
-        - script: ./IN/ar-samplescript34/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript118/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI34
+  - name: ac-inrunCLI118
     type: runCLI
     steps:
-      - IN: ac-inrunSh34
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh35
-    type: runSh
-    steps:
-      - IN: ac-samplescript35
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript35/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI35
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh35
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh36
-    type: runSh
-    steps:
-      - IN: ac-samplescript36
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript6/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI36
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh36
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh37
-    type: runSh
-    steps:
-      - IN: ac-samplescript37
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript37/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI37
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh37
+      - IN: ac-inrunSh118
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh38
+  - name: ac-inrunSh119
     type: runSh
     steps:
-      - IN: ac-samplescript38
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript119
+      - IN: ac-params119
       - TASK:
-        - script: ./IN/ar-samplescript38/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript119/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI38
+  - name: ac-inrunCLI119
     type: runCLI
     steps:
-      - IN: ac-inrunSh38
+      - IN: ac-inrunSh119
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh120
+    type: runSh
+    steps:
+      - IN: ac-samplescript120
+      - IN: ac-params120
+      - TASK:
+        - script: ./IN/ar-samplescript120/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI120
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh120
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh39
+  - name: ac-inrunSh121
     type: runSh
     steps:
-      - IN: ac-samplescript39
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript121
+      - IN: ac-params121
       - TASK:
-        - script: ./IN/ar-samplescript39/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript121/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI39
+  - name: ac-inrunCLI121
     type: runCLI
     steps:
-      - IN: ac-inrunSh39
+      - IN: ac-inrunSh121
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh122
+    type: runSh
+    steps:
+      - IN: ac-samplescript122
+      - IN: ac-params122
+      - TASK:
+        - script: ./IN/ar-samplescript122/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI122
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh122
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh123
+    type: runSh
+    steps:
+      - IN: ac-samplescript123
+      - IN: ac-params123
+      - TASK:
+        - script: ./IN/ar-samplescript123/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI123
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh123
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh124
+    type: runSh
+    steps:
+      - IN: ac-samplescript124
+      - IN: ac-params124
+      - TASK:
+        - script: ./IN/ar-samplescript124/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI124
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh124
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh125
+    type: runSh
+    steps:
+      - IN: ac-samplescript125
+      - IN: ac-params125
+      - TASK:
+        - script: ./IN/ar-samplescript125/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI125
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh125
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh40
+  - name: ac-inrunSh126
     type: runSh
     steps:
-      - IN: ac-samplescript40
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript126
+      - IN: ac-params126
       - TASK:
-        - script: ./IN/ar-samplescript40/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript126/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI40
+  - name: ac-inrunCLI126
     type: runCLI
     steps:
-      - IN: ac-inrunSh40
+      - IN: ac-inrunSh126
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh127
+    type: runSh
+    steps:
+      - IN: ac-samplescript127
+      - IN: ac-params127
+      - TASK:
+        - script: ./IN/ar-samplescript127/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI127
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh127
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh41
+  - name: ac-inrunSh128
     type: runSh
     steps:
-      - IN: ac-samplescript41
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript128
+      - IN: ac-params128
       - TASK:
-        - script: ./IN/ar-samplescript41/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript128/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI41
+  - name: ac-inrunCLI128
     type: runCLI
     steps:
-      - IN: ac-inrunSh41
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh42
-    type: runSh
-    steps:
-      - IN: ac-samplescript42
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript42/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI42
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh42
+      - IN: ac-inrunSh128
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh43
+  - name: ac-inrunSh129
     type: runSh
     steps:
-      - IN: ac-samplescript43
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript129
+      - IN: ac-params129
       - TASK:
-        - script: ./IN/ar-samplescript43/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript129/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI43
+  - name: ac-inrunCLI129
     type: runCLI
     steps:
-      - IN: ac-inrunSh43
+      - IN: ac-inrunSh129
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh130
+    type: runSh
+    steps:
+      - IN: ac-samplescript130
+      - IN: ac-params130
+      - TASK:
+        - script: ./IN/ar-samplescript130/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI130
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh130
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh44
+  - name: ac-inrunSh131
     type: runSh
     steps:
-      - IN: ac-samplescript44
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript131
+      - IN: ac-params131
       - TASK:
-        - script: ./IN/ar-samplescript44/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript131/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI44
+  - name: ac-inrunCLI131
     type: runCLI
     steps:
-      - IN: ac-inrunSh44
+      - IN: ac-inrunSh131
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh45
+  - name: ac-inrunSh132
     type: runSh
     steps:
-      - IN: ac-samplescript45
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript132
+      - IN: ac-params132
       - TASK:
-        - script: ./IN/ar-samplescript45/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript132/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI45
+  - name: ac-inrunCLI132
     type: runCLI
     steps:
-      - IN: ac-inrunSh45
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh46
-    type: runSh
-    steps:
-      - IN: ac-samplescript46
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript46/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI46
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh46
+      - IN: ac-inrunSh132
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh47
+  - name: ac-inrunSh133
     type: runSh
     steps:
-      - IN: ac-samplescript47
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript133
+      - IN: ac-params133
       - TASK:
-        - script: ./IN/ar-samplescript47/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript133/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI47
+  - name: ac-inrunCLI133
     type: runCLI
     steps:
-      - IN: ac-inrunSh47
+      - IN: ac-inrunSh133
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh48
+        
+  - name: ac-inrunSh134
     type: runSh
     steps:
-      - IN: ac-samplescript48
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript134
+      - IN: ac-params134
       - TASK:
-        - script: ./IN/ar-samplescript48/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript134/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI48
+  - name: ac-inrunCLI134
     type: runCLI
     steps:
-      - IN: ac-inrunSh48
+      - IN: ac-inrunSh134
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh49
+        
+  - name: ac-inrunSh135
     type: runSh
     steps:
-      - IN: ac-samplescript49
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript135
+      - IN: ac-params135
       - TASK:
-        - script: ./IN/ar-samplescript49/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript135/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI49
+  - name: ac-inrunCLI135
     type: runCLI
     steps:
-      - IN: ac-inrunSh49
+      - IN: ac-inrunSh135
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh50
+  - name: ac-inrunSh136
     type: runSh
     steps:
-      - IN: ac-samplescript50
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript136
+      - IN: ac-params136
       - TASK:
-        - script: ./IN/ar-samplescript50/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript136/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI50
+  - name: ac-inrunCLI136
     type: runCLI
     steps:
-      - IN: ac-inrunSh10
+      - IN: ac-inrunSh136
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh137
+    type: runSh
+    steps:
+      - IN: ac-samplescript137
+      - IN: ac-params137
+      - TASK:
+        - script: ./IN/ar-samplescript137/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI137
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh137
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh51
+  - name: ac-inrunSh138
     type: runSh
     steps:
-      - IN: ac-samplescript51
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript138
+      - IN: ac-params138
       - TASK:
-        - script: ./IN/ar-samplescript51/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript138/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI51
+  - name: ac-inrunCLI138
     type: runCLI
     steps:
-      - IN: ac-inrunSh51
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh52
-    type: runSh
-    steps:
-      - IN: ac-samplescript52
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript52/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI52
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh52
+      - IN: ac-inrunSh138
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh53
+  - name: ac-inrunSh139
     type: runSh
     steps:
-      - IN: ac-samplescript53
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript139
+      - IN: ac-params139
       - TASK:
-        - script: ./IN/ar-samplescript53/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript139/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI53
+  - name: ac-inrunCLI139
     type: runCLI
     steps:
-      - IN: ac-inrunSh53
+      - IN: ac-inrunSh139
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh140
+    type: runSh
+    steps:
+      - IN: ac-samplescript140
+      - IN: ac-params140
+      - TASK:
+        - script: ./IN/ar-samplescript140/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI140
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh140
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh141
+    type: runSh
+    steps:
+      - IN: ac-samplescript141
+      - IN: ac-params141
+      - TASK:
+        - script: ./IN/ar-samplescript141/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI141
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh141
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh142
+    type: runSh
+    steps:
+      - IN: ac-samplescript142
+      - IN: ac-params142
+      - TASK:
+        - script: ./IN/ar-samplescript142/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI142
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh142
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh143
+    type: runSh
+    steps:
+      - IN: ac-samplescript143
+      - IN: ac-params143
+      - TASK:
+        - script: ./IN/ar-samplescript143/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI143
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh143
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh144
+    type: runSh
+    steps:
+      - IN: ac-samplescript144
+      - IN: ac-params144
+      - TASK:
+        - script: ./IN/ar-samplescript144/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI144
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh144
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh145
+    type: runSh
+    steps:
+      - IN: ac-samplescript145
+      - IN: ac-params145
+      - TASK:
+        - script: ./IN/ar-samplescript145/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI145
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh145
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh54
+  - name: ac-inrunSh146
     type: runSh
     steps:
-      - IN: ac-samplescript54
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript146
+      - IN: ac-params146
       - TASK:
-        - script: ./IN/ar-samplescript54/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript146/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI54
+  - name: ac-inrunCLI146
     type: runCLI
     steps:
-      - IN: ac-inrunSh54
+      - IN: ac-inrunSh146
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh55
+  - name: ac-inrunSh147
     type: runSh
     steps:
-      - IN: ac-samplescript55
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript147
+      - IN: ac-params147
       - TASK:
-        - script: ./IN/ar-samplescript55/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript147/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI55
+  - name: ac-inrunCLI147
     type: runCLI
     steps:
-      - IN: ac-inrunSh55
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh56
-    type: runSh
-    steps:
-      - IN: ac-samplescript56
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript56/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI56
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh56
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh57
-    type: runSh
-    steps:
-      - IN: ac-samplescript57
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript57/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI57
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh57
+      - IN: ac-inrunSh147
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh58
+  - name: ac-inrunSh148
     type: runSh
     steps:
-      - IN: ac-samplescript58
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript148
+      - IN: ac-params148
       - TASK:
-        - script: ./IN/ar-samplescript58/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript148/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI58
+  - name: ac-inrunCLI148
     type: runCLI
     steps:
-      - IN: ac-inrunSh58
+      - IN: ac-inrunSh148
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh59
+  - name: ac-inrunSh149
     type: runSh
     steps:
-      - IN: ac-samplescript59
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript149
+      - IN: ac-params149
       - TASK:
-        - script: ./IN/ar-samplescript59/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript149/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI59
+  - name: ac-inrunCLI149
     type: runCLI
     steps:
-      - IN: ac-inrunSh59
+      - IN: ac-inrunSh149
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh150
+    type: runSh
+    steps:
+      - IN: ac-samplescript150
+      - IN: ac-params150
+      - TASK:
+        - script: ./IN/ar-samplescript150/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI150
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh150
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh60
+  - name: ac-inrunSh151
     type: runSh
     steps:
-      - IN: ac-samplescript60
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript151
+      - IN: ac-params101
       - TASK:
-        - script: ./IN/ar-samplescript60/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript151/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI60
+  - name: ac-inrunCLI151
     type: runCLI
     steps:
-      - IN: ac-inrunSh60
+      - IN: ac-inrunSh151
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh152
+    type: runSh
+    steps:
+      - IN: ac-samplescript152
+      - IN: ac-params152
+      - TASK:
+        - script: ./IN/ar-samplescript152/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI152
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh152
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh153
+    type: runSh
+    steps:
+      - IN: ac-samplescript153
+      - IN: ac-params153
+      - TASK:
+        - script: ./IN/ar-samplescript153/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI153
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh153
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh154
+    type: runSh
+    steps:
+      - IN: ac-samplescript154
+      - IN: ac-params154
+      - TASK:
+        - script: ./IN/ar-samplescript154/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI154
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh154
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh155
+    type: runSh
+    steps:
+      - IN: ac-samplescript155
+      - IN: ac-params155
+      - TASK:
+        - script: ./IN/ar-samplescript155/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI155
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh155
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh61
+  - name: ac-inrunSh156
     type: runSh
     steps:
-      - IN: ac-samplescript61
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript156
+      - IN: ac-params156
       - TASK:
-        - script: ./IN/ar-samplescript61/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript156/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI61
+  - name: ac-inrunCLI156
     type: runCLI
     steps:
-      - IN: ac-inrunSh61
+      - IN: ac-inrunSh156
       - TASK:
         - script: ls
-
-  - name: ac-inrunSh62
+        
+  - name: ac-inrunSh157
     type: runSh
     steps:
-      - IN: ac-samplescript62
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript157
+      - IN: ac-params157
       - TASK:
-        - script: ./IN/ar-samplescript62/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript157/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI62
+  - name: ac-inrunCLI157
     type: runCLI
     steps:
-      - IN: ac-inrunSh62
-      - TASK:
-        - script: ls
-  
-  - name: ac-inrunSh63
-    type: runSh
-    steps:
-      - IN: ac-samplescript63
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript63/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI63
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh63
+      - IN: ac-inrunSh157
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh64
+  - name: ac-inrunSh158
     type: runSh
     steps:
-      - IN: ac-samplescript64
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript158
+      - IN: ac-params158
       - TASK:
-        - script: ./IN/ar-samplescript64/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript158/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI64
+  - name: ac-inrunCLI158
     type: runCLI
     steps:
-      - IN: ac-inrunSh64
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh65
-    type: runSh
-    steps:
-      - IN: ac-samplescript65
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript65/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI65
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh65
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh66
-    type: runSh
-    steps:
-      - IN: ac-samplescript66
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript66/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI66
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh66
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh67
-    type: runSh
-    steps:
-      - IN: ac-samplescript67
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript67/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI67
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh67
+      - IN: ac-inrunSh158
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh68
+  - name: ac-inrunSh159
     type: runSh
     steps:
-      - IN: ac-samplescript68
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript159
+      - IN: ac-params159
       - TASK:
-        - script: ./IN/ar-samplescript68/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript159/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI68
+  - name: ac-inrunCLI159
     type: runCLI
     steps:
-      - IN: ac-inrunSh68
+      - IN: ac-inrunSh159
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh160
+    type: runSh
+    steps:
+      - IN: ac-samplescript160
+      - IN: ac-params160
+      - TASK:
+        - script: ./IN/ar-samplescript160/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI160
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh160
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh69
+  - name: ac-inrunSh161
     type: runSh
     steps:
-      - IN: ac-samplescript69
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript161
+      - IN: ac-params161
       - TASK:
-        - script: ./IN/ar-samplescript69/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript161/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI69
+  - name: ac-inrunCLI161
     type: runCLI
     steps:
-      - IN: ac-inrunSh69
+      - IN: ac-inrunSh161
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh162
+    type: runSh
+    steps:
+      - IN: ac-samplescript162
+      - IN: ac-params162
+      - TASK:
+        - script: ./IN/ar-samplescript162/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI162
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh162
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh163
+    type: runSh
+    steps:
+      - IN: ac-samplescript163
+      - IN: ac-params101
+      - TASK:
+        - script: ./IN/ar-samplescript163/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI163
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh163
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh164
+    type: runSh
+    steps:
+      - IN: ac-samplescript164
+      - IN: ac-params164
+      - TASK:
+        - script: ./IN/ar-samplescript164/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI164
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh164
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh165
+    type: runSh
+    steps:
+      - IN: ac-samplescript165
+      - IN: ac-params165
+      - TASK:
+        - script: ./IN/ar-samplescript165/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI165
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh165
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh70
+  - name: ac-inrunSh166
     type: runSh
     steps:
-      - IN: ac-samplescript70
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript166
+      - IN: ac-params166
       - TASK:
-        - script: ./IN/ar-samplescript70/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript166/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI70
+  - name: ac-inrunCLI166
     type: runCLI
     steps:
-      - IN: ac-inrunSh70
+      - IN: ac-inrunSh166
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh71
+  - name: ac-inrunSh167
     type: runSh
     steps:
-      - IN: ac-samplescript71
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript167
+      - IN: ac-params167
       - TASK:
-        - script: ./IN/ar-samplescript71/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript167/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI71
+  - name: ac-inrunCLI167
     type: runCLI
     steps:
-      - IN: ac-inrunSh71
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh72
-    type: runSh
-    steps:
-      - IN: ac-samplescript72
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript72/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI72
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh72
+      - IN: ac-inrunSh167
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh73
+  - name: ac-inrunSh168
     type: runSh
     steps:
-      - IN: ac-samplescript73
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript168
+      - IN: ac-params168
       - TASK:
-        - script: ./IN/ar-samplescript73/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript168/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI73
+  - name: ac-inrunCLI168
     type: runCLI
     steps:
-      - IN: ac-inrunSh73
+      - IN: ac-inrunSh168
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh74
+  - name: ac-inrunSh169
     type: runSh
     steps:
-      - IN: ac-samplescript74
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript169
+      - IN: ac-params169
       - TASK:
-        - script: ./IN/ar-samplescript74/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript169/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI74
+  - name: ac-inrunCLI169
     type: runCLI
     steps:
-      - IN: ac-inrunSh74
+      - IN: ac-inrunSh169
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh75
+  - name: ac-inrunSh170
     type: runSh
     steps:
-      - IN: ac-samplescript75
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript170
+      - IN: ac-params170
       - TASK:
-        - script: ./IN/ar-samplescript75/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript170/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI75
+  - name: ac-inrunCLI170
     type: runCLI
     steps:
-      - IN: ac-inrunSh75
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh76
-    type: runSh
-    steps:
-      - IN: ac-samplescript76
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript76/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI76
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh76
+      - IN: ac-inrunSh170
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh77
+  - name: ac-inrunSh171
     type: runSh
     steps:
-      - IN: ac-samplescript77
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript171
+      - IN: ac-params171
       - TASK:
-        - script: ./IN/ar-samplescript77/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript171/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI77
+  - name: ac-inrunCLI171
     type: runCLI
     steps:
-      - IN: ac-inrunSh77
+      - IN: ac-inrunSh171
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh78
+        
+  - name: ac-inrunSh172
     type: runSh
     steps:
-      - IN: ac-samplescript78
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript172
+      - IN: ac-params172
       - TASK:
-        - script: ./IN/ar-samplescript78/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript172/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI78
+  - name: ac-inrunCLI172
     type: runCLI
     steps:
-      - IN: ac-inrunSh78
+      - IN: ac-inrunSh172
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh79
+        
+  - name: ac-inrunSh173
     type: runSh
     steps:
-      - IN: ac-samplescript79
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript173
+      - IN: ac-params173
       - TASK:
-        - script: ./IN/ar-samplescript79/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript173/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI79
+  - name: ac-inrunCLI173
     type: runCLI
     steps:
-      - IN: ac-inrunSh79
+      - IN: ac-inrunSh173
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh80
+        
+  - name: ac-inrunSh174
     type: runSh
     steps:
-      - IN: ac-samplescript80
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript174
+      - IN: ac-params174
       - TASK:
-        - script: ./IN/ar-samplescript80/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript174/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI80
+  - name: ac-inrunCLI174
     type: runCLI
     steps:
-      - IN: ac-inrunSh80
+      - IN: ac-inrunSh174
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh81
+        
+  - name: ac-inrunSh175
     type: runSh
     steps:
-      - IN: ac-samplescript81
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript175
+      - IN: ac-params175
       - TASK:
-        - script: ./IN/ar-samplescript81/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript175/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI81
+  - name: ac-inrunCLI175
     type: runCLI
     steps:
-      - IN: ac-inrunSh81
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh82
-    type: runSh
-    steps:
-      - IN: ac-samplescript82
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript82/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI82
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh82
+      - IN: ac-inrunSh175
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh83
+  - name: ac-inrunSh176
     type: runSh
     steps:
-      - IN: ac-samplescript83
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript176
+      - IN: ac-params176
       - TASK:
-        - script: ./IN/ar-samplescript83/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript176/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI83
+  - name: ac-inrunCLI176
     type: runCLI
     steps:
-      - IN: ac-inrunSh83
+      - IN: ac-inrunSh176
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh177
+    type: runSh
+    steps:
+      - IN: ac-samplescript177
+      - IN: ac-params177
+      - TASK:
+        - script: ./IN/ar-samplescript177/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI177
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh177
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh84
+  - name: ac-inrunSh178
     type: runSh
     steps:
-      - IN: ac-samplescript84
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript178
+      - IN: ac-params178
       - TASK:
-        - script: ./IN/ar-samplescript84/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript178/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI84
+  - name: ac-inrunCLI178
     type: runCLI
     steps:
-      - IN: ac-inrunSh84
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh85
-    type: runSh
-    steps:
-      - IN: ac-samplescript85
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript85/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI85
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh85
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh86
-    type: runSh
-    steps:
-      - IN: ac-samplescript86
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript86/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI86
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh86
-      - TASK:
-        - script: ls
-        
-  - name: ac-inrunSh87
-    type: runSh
-    steps:
-      - IN: ac-samplescript87
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript87/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI87
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh87
+      - IN: ac-inrunSh178
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh88
+  - name: ac-inrunSh179
     type: runSh
     steps:
-      - IN: ac-samplescript88
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript179
+      - IN: ac-params179
       - TASK:
-        - script: ./IN/ar-samplescript88/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript179/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI88
+  - name: ac-inrunCLI179
     type: runCLI
     steps:
-      - IN: ac-inrunSh88
+      - IN: ac-inrunSh179
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh180
+    type: runSh
+    steps:
+      - IN: ac-samplescript180
+      - IN: ac-params180
+      - TASK:
+        - script: ./IN/ar-samplescript180/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI180
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh180
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh89
+  - name: ac-inrunSh181
     type: runSh
     steps:
-      - IN: ac-samplescript89
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript181
+      - IN: ac-params181
       - TASK:
-        - script: ./IN/ar-samplescript89/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript181/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI89
+  - name: ac-inrunCLI181
     type: runCLI
     steps:
-      - IN: ac-inrunSh89
+      - IN: ac-inrunSh181
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh182
+    type: runSh
+    steps:
+      - IN: ac-samplescript182
+      - IN: ac-params182
+      - TASK:
+        - script: ./IN/ar-samplescript182/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI182
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh182
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh183
+    type: runSh
+    steps:
+      - IN: ac-samplescript183
+      - IN: ac-params183
+      - TASK:
+        - script: ./IN/ar-samplescript183/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI183
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh183
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh184
+    type: runSh
+    steps:
+      - IN: ac-samplescript184
+      - IN: ac-params184
+      - TASK:
+        - script: ./IN/ar-samplescript184/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI184
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh184
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh185
+    type: runSh
+    steps:
+      - IN: ac-samplescript185
+      - IN: ac-params185
+      - TASK:
+        - script: ./IN/ar-samplescript185/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI185
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh185
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh90
+  - name: ac-inrunSh186
     type: runSh
     steps:
-      - IN: ac-samplescript90
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript186
+      - IN: ac-params186
       - TASK:
-        - script: ./IN/ar-samplescript90/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript186/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI90
+  - name: ac-inrunCLI186
     type: runCLI
     steps:
-      - IN: ac-inrunSh90
+      - IN: ac-inrunSh186
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh187
+    type: runSh
+    steps:
+      - IN: ac-samplescript187
+      - IN: ac-params187
+      - TASK:
+        - script: ./IN/ar-samplescript187/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI187
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh187
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh91
+  - name: ac-inrunSh188
     type: runSh
     steps:
-      - IN: ac-samplescript91
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript188
+      - IN: ac-params188
       - TASK:
-        - script: ./IN/ar-samplescript91/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript188/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI91
+  - name: ac-inrunCLI188
     type: runCLI
     steps:
-      - IN: ac-inrunSh91
-      - TASK:
-        - script: ls
-
-  - name: ac-inrunSh92
-    type: runSh
-    steps:
-      - IN: ac-samplescript92
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript92/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI92
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh92
+      - IN: ac-inrunSh188
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh93
+  - name: ac-inrunSh189
     type: runSh
     steps:
-      - IN: ac-samplescript93
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript189
+      - IN: ac-params189
       - TASK:
-        - script: ./IN/ar-samplescript93/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript189/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI93
+  - name: ac-inrunCLI189
     type: runCLI
     steps:
-      - IN: ac-inrunSh93
+      - IN: ac-inrunSh189
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh190
+    type: runSh
+    steps:
+      - IN: ac-samplescript190
+      - IN: ac-params190
+      - TASK:
+        - script: ./IN/ar-samplescript190/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI190
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh190
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh94
+  - name: ac-inrunSh191
     type: runSh
     steps:
-      - IN: ac-samplescript94
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript191
+      - IN: ac-params191
       - TASK:
-        - script: ./IN/ar-samplescript94/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript191/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI94
+  - name: ac-inrunCLI191
     type: runCLI
     steps:
-      - IN: ac-inrunSh94
+      - IN: ac-inrunSh191
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh95
+  - name: ac-inrunSh192
     type: runSh
     steps:
-      - IN: ac-samplescript95
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript192
+      - IN: ac-params192
       - TASK:
-        - script: ./IN/ar-samplescript95/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript192/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI95
+  - name: ac-inrunCLI192
     type: runCLI
     steps:
-      - IN: ac-inrunSh95
-      - TASK:
-        - script: ls  
-  
-  - name: ac-inrunSh96
-    type: runSh
-    steps:
-      - IN: ac-samplescript96
-      - IN: trigger-allRunshAndRuncli
-      - TASK:
-        - script: ./IN/ar-samplescript96/gitRepo/echo.sh
-        
-  - name: ac-inrunCLI96
-    type: runCLI
-    steps:
-      - IN: ac-inrunSh96
+      - IN: ac-inrunSh192
       - TASK:
         - script: ls
         
-  - name: ac-inrunSh97
+  - name: ac-inrunSh193
     type: runSh
     steps:
-      - IN: ac-samplescript97
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript193
+      - IN: ac-params191
       - TASK:
-        - script: ./IN/ar-samplescript97/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript193/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI97
+  - name: ac-inrunCLI193
     type: runCLI
     steps:
-      - IN: ac-inrunSh97
+      - IN: ac-inrunSh193
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh98
+        
+  - name: ac-inrunSh194
     type: runSh
     steps:
-      - IN: ac-samplescript98
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript194
+      - IN: ac-params194
       - TASK:
-        - script: ./IN/ar-samplescript98/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript194/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI98
+  - name: ac-inrunCLI194
     type: runCLI
     steps:
-      - IN: ac-inrunSh98
+      - IN: ac-inrunSh194
       - TASK:
         - script: ls
-  
-  - name: ac-inrunSh99
+        
+  - name: ac-inrunSh195
     type: runSh
     steps:
-      - IN: ac-samplescript99
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript195
+      - IN: ac-params195
       - TASK:
-        - script: ./IN/ar-samplescript99/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript195/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI99
+  - name: ac-inrunCLI195
     type: runCLI
     steps:
-      - IN: ac-inrunSh99
+      - IN: ac-inrunSh195
       - TASK:
         - script: ls
   
-  - name: ac-inrunSh100
+  - name: ac-inrunSh196
     type: runSh
     steps:
-      - IN: ac-samplescript100
-      - IN: trigger-allRunshAndRuncli
+      - IN: ac-samplescript196
+      - IN: ac-params196
       - TASK:
-        - script: ./IN/ar-samplescript100/gitRepo/echo.sh
+        - script: ./IN/ar-samplescript196/gitRepo/echo.sh
+        - script: echo "env=$env"
         
-  - name: ac-inrunCLI100
+  - name: ac-inrunCLI196
     type: runCLI
     steps:
-      - IN: ac-inrunSh100
+      - IN: ac-inrunSh196
       - TASK:
         - script: ls
         
-#PROVISION
-#  - name: ac-provision                                                  #required
-#    type: provision                                                  #required
- #   steps:
-  #    - IN: ac-files 
-
-#JENKINSJOB
-#  - name: ac-jenkins                  # a memorable, unique name. this is how your job will be referred to in shippable pipelines
- #   type: jenkinsJob                  # The type of the job (should not be changed by the user)
-  #  integration: "ship-jenkins"   # The name of your Jenkins integration (created via accountSettings page)
-  #  pointer:
-  #    sourceName: "firstjob1"          # The name of your Jenkins job
-  #  steps:
-  #    - OUT: "ac-files"     
-   
+  - name: ac-inrunSh197
+    type: runSh
+    steps:
+      - IN: ac-samplescript197
+      - IN: ac-params197
+      - TASK:
+        - script: ./IN/ar-samplescript197/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI197
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh197
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh198
+    type: runSh
+    steps:
+      - IN: ac-samplescript198
+      - IN: ac-params108
+      - TASK:
+        - script: ./IN/ar-samplescript198/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI198
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh198
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh199
+    type: runSh
+    steps:
+      - IN: ac-samplescript199
+      - IN: ac-params199
+      - TASK:
+        - script: ./IN/ar-samplescript199/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI199
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh199
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh200
+    type: runSh
+    steps:
+      - IN: ac-samplescript200
+      - IN: ac-params200
+      - TASK:
+        - script: ./IN/ar-samplescript200/gitRepo/echo.sh
+        - script: echo "env=$env"
+        
+  - name: ac-inrunCLI200
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh200
+      - TASK:
+        - script: ls
+        
