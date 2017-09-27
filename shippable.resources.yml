@@ -13183,22 +13183,22 @@ resources:
         env: param500
         
 #REPLICAS      
-  - name: ar-replica2
+  - name: ac-replica2
     type: replicas
     version:
       count: 2
 
 #TIME
 
-  - name: ar-testtime
+  - name: ac-testtime
     type: time
     seed:
       interval: "1 1 1 * *" #"*/9 * 9 9 *"
       
 #VERSIONS
 
-  - name: ar-version
+  - name: ac-version
     type: version
     seed:
-      versionName: "6.1.2"
+      versionName: "5.9.4"
       
