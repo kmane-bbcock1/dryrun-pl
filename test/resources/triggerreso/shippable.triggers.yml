@@ -1,7 +1,7 @@
 triggers:
 
    
-   - name: ac-sample2
+   - name: ac-sample3
      type: trigger
      version:
        counter: 0
