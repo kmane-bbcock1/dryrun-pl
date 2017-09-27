@@ -1,16 +1,21 @@
 triggers:
-   - name: ar-tg1
+   - name: ac-tg1
      type: trigger
      version:
        counter: 0
        
-   - name: ar-tg2
+   - name: ac-tg2
      type: trigger
      version:
        counter: 0
        
-   - name: ar-tg3
+   - name: ac-tg3
      type: trigger
      version:
        counter: 0
-       
+   
+   - name: ac-trAllRunshAndRuncli
+     type: trigger
+     version:
+       counter: 0
+   
