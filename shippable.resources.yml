@@ -102,13 +102,7 @@ resources:
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
-      
-  - name: ac-gkecluster
-    type: cluster
-    integration: ship-gke
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+
   
  # - name: ac-tritoncluster
   #  type: cluster
