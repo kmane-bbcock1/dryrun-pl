@@ -896,7 +896,7 @@ resources:
     seed:
       versionName: "deploy.2"
       
-  - name: ac-image15
+  - name: ac-image115
     type: image
     integration: docker
     pointer:
