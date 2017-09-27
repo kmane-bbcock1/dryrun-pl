@@ -6,13 +6,6 @@ resources:
     pointer:
       sourceName: "shiphitchcock1/sample-script"
       branch: master
-      #tags:
-       # only:
-        #  - v1.*
-      buildOnCommit: true    
-      buildOnPullRequest: true
-      buildOnRelease: true
-      buildOnTagPush: true
    
   - name: ac-samplescript302
     type: gitRepo
