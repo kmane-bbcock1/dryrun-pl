@@ -1,7 +1,19 @@
 resources:
-
-
-- name: ac-samplescript201
+  - name: aa3-gitrepo
+    type: gitRepo
+    integration: "bitbucket"
+    pointer:
+      sourceName: "shiphitchcock1/sample_script_3"
+      branch: master
+  
+  - name: aa2-gitrepo
+    type: gitRepo
+    integration: "bitbucket"
+    pointer:
+      sourceName: "shiphitchcock1/sample_script_2"
+      branch: master
+      
+  - name: ac-samplescript201
     type: gitRepo
     integration: "github"
     pointer:
