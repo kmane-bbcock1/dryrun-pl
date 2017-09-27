@@ -2,7 +2,7 @@ resources:
       
   - name: ac-samplescript301
     type: gitRepo
-    integration: "github"
+    integration: "bitbucket"
     pointer:
       sourceName: "shiphitchcock1/sample-script"
       branch: master
