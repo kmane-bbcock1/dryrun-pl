@@ -14,7 +14,7 @@ triggers:
      version:
        counter: 0
    
-   - name: ac-trAllRunshAndRuncli
+   - name: trigger-allRunshAndRuncli
      type: trigger
      version:
        counter: 0
