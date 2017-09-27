@@ -3434,13 +3434,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript1
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript1/gitRepo/echo.sh
         
   - name: ac-inrunCLI1
     type: runCLI
     steps:
-      - IN: ac-samplescript1
+      - IN: ac-inrunSh1
       - TASK:
         - script: ls
 
@@ -3448,13 +3449,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript2
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript2/gitRepo/echo.sh
         
   - name: ac-inrunCLI2
     type: runCLI
     steps:
-      - IN: ac-samplescript2
+      - IN: ac-inrunSh2
       - TASK:
         - script: ls
   
@@ -3462,13 +3464,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript3
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript3/gitRepo/echo.sh
         
   - name: ac-inrunCLI3
     type: runCLI
     steps:
-      - IN: ac-samplescript3
+      - IN: ac-inrunSh3
       - TASK:
         - script: ls
   
@@ -3476,13 +3479,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript4
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript4/gitRepo/echo.sh
         
   - name: ac-inrunCLI4
     type: runCLI
     steps:
-      - IN: ac-samplescript4
+      - IN: ac-inrunSh4
       - TASK:
         - script: ls
         
@@ -3490,13 +3494,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript5
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript5/gitRepo/echo.sh
         
   - name: ac-inrunCLI5
     type: runCLI
     steps:
-      - IN: ac-samplescript5
+      - IN: ac-inrunSh5
       - TASK:
         - script: ls  
   
@@ -3504,13 +3509,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript6
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript6/gitRepo/echo.sh
         
   - name: ac-inrunCLI6
     type: runCLI
     steps:
-      - IN: ac-samplescript6
+      - IN: ac-inrunSh6
       - TASK:
         - script: ls
         
@@ -3518,13 +3524,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript7
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript7/gitRepo/echo.sh
         
   - name: ac-inrunCLI7
     type: runCLI
     steps:
-      - IN: ac-samplescript7
+      - IN: ac-inrunSh7
       - TASK:
         - script: ls
   
@@ -3532,13 +3539,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript8
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript8/gitRepo/echo.sh
         
   - name: ac-inrunCLI8
     type: runCLI
     steps:
-      - IN: ac-samplescript8
+      - IN: ac-inrunSh8
       - TASK:
         - script: ls
   
@@ -3546,13 +3554,14 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript9
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript9/gitRepo/echo.sh
         
   - name: ac-inrunCLI9
     type: runCLI
     steps:
-      - IN: ac-samplescript9
+      - IN: ac-inrunSh9
       - TASK:
         - script: ls
   
@@ -3560,13 +3569,1064 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript10
+      - IN: trigger-allRunshAndRuncli
       - TASK:
         - script: ./IN/ar-samplescript10/gitRepo/echo.sh
         
   - name: ac-inrunCLI10
     type: runCLI
     steps:
-      - IN: ac-samplescript10
+      - IN: ac-inrunSh10
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh11
+    type: runSh
+    steps:
+      - IN: ac-samplescript11
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript11/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI11
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh11
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh12
+    type: runSh
+    steps:
+      - IN: ac-samplescript12
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript12/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI12
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh12
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh13
+    type: runSh
+    steps:
+      - IN: ac-samplescript13
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript13/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI13
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh13
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh14
+    type: runSh
+    steps:
+      - IN: ac-samplescript14
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript14/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI14
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh4
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh15
+    type: runSh
+    steps:
+      - IN: ac-samplescript15
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript15/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI15
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh15
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh16
+    type: runSh
+    steps:
+      - IN: ac-samplescript16
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript16/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI16
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh16
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh17
+    type: runSh
+    steps:
+      - IN: ac-samplescript17
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript17/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI17
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh17
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh18
+    type: runSh
+    steps:
+      - IN: ac-samplescript18
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript18/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI18
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh18
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh19
+    type: runSh
+    steps:
+      - IN: ac-samplescript19
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript19/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI19
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh19
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh20
+    type: runSh
+    steps:
+      - IN: ac-samplescript20
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript20/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI20
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh20
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh21
+    type: runSh
+    steps:
+      - IN: ac-samplescript21
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript21/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI21
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh21
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh22
+    type: runSh
+    steps:
+      - IN: ac-samplescript22
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript22/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI22
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh22
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh23
+    type: runSh
+    steps:
+      - IN: ac-samplescript23
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript23/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI23
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh23
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh24
+    type: runSh
+    steps:
+      - IN: ac-samplescript24
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript24/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI24
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh24
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh25
+    type: runSh
+    steps:
+      - IN: ac-samplescript25
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript25/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI25
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh25
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh26
+    type: runSh
+    steps:
+      - IN: ac-samplescript26
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript26/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI26
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh26
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh27
+    type: runSh
+    steps:
+      - IN: ac-samplescript27
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript27/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI27
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh27
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh28
+    type: runSh
+    steps:
+      - IN: ac-samplescript28
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript8/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI28
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh28
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh29
+    type: runSh
+    steps:
+      - IN: ac-samplescript29
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript29/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI29
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh29
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh30
+    type: runSh
+    steps:
+      - IN: ac-samplescript30
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript30/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI30
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh30
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh31
+    type: runSh
+    steps:
+      - IN: ac-samplescript31
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript31/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI31
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh31
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh32
+    type: runSh
+    steps:
+      - IN: ac-samplescript32
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript32/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI32
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh32
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh33
+    type: runSh
+    steps:
+      - IN: ac-samplescript33
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript33/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI33
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh33
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh34
+    type: runSh
+    steps:
+      - IN: ac-samplescript34
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript34/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI34
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh34
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh35
+    type: runSh
+    steps:
+      - IN: ac-samplescript35
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript35/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI35
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh35
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh36
+    type: runSh
+    steps:
+      - IN: ac-samplescript36
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript6/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI36
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh36
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh37
+    type: runSh
+    steps:
+      - IN: ac-samplescript37
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript37/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI37
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh37
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh38
+    type: runSh
+    steps:
+      - IN: ac-samplescript38
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript38/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI38
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh38
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh39
+    type: runSh
+    steps:
+      - IN: ac-samplescript39
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript39/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI39
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh39
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh40
+    type: runSh
+    steps:
+      - IN: ac-samplescript40
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript40/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI40
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh40
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh41
+    type: runSh
+    steps:
+      - IN: ac-samplescript41
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript41/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI41
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh41
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh42
+    type: runSh
+    steps:
+      - IN: ac-samplescript42
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript42/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI42
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh42
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh43
+    type: runSh
+    steps:
+      - IN: ac-samplescript43
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript43/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI43
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh43
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh44
+    type: runSh
+    steps:
+      - IN: ac-samplescript44
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript44/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI44
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh44
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh45
+    type: runSh
+    steps:
+      - IN: ac-samplescript45
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript45/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI45
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh45
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh46
+    type: runSh
+    steps:
+      - IN: ac-samplescript46
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript46/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI46
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh46
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh47
+    type: runSh
+    steps:
+      - IN: ac-samplescript47
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript47/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI47
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh47
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh48
+    type: runSh
+    steps:
+      - IN: ac-samplescript48
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript48/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI48
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh48
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh49
+    type: runSh
+    steps:
+      - IN: ac-samplescript49
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript49/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI49
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh49
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh50
+    type: runSh
+    steps:
+      - IN: ac-samplescript50
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript50/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI50
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh10
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh51
+    type: runSh
+    steps:
+      - IN: ac-samplescript51
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript51/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI51
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh51
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh52
+    type: runSh
+    steps:
+      - IN: ac-samplescript52
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript52/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI52
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh52
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh53
+    type: runSh
+    steps:
+      - IN: ac-samplescript53
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript53/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI53
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh53
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh54
+    type: runSh
+    steps:
+      - IN: ac-samplescript54
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript54/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI54
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh54
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh55
+    type: runSh
+    steps:
+      - IN: ac-samplescript55
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript55/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI55
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh55
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh56
+    type: runSh
+    steps:
+      - IN: ac-samplescript56
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript56/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI56
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh56
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh57
+    type: runSh
+    steps:
+      - IN: ac-samplescript57
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript57/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI57
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh57
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh58
+    type: runSh
+    steps:
+      - IN: ac-samplescript58
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript58/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI58
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh58
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh59
+    type: runSh
+    steps:
+      - IN: ac-samplescript59
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript59/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI59
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh59
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh60
+    type: runSh
+    steps:
+      - IN: ac-samplescript60
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript60/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI60
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh60
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh61
+    type: runSh
+    steps:
+      - IN: ac-samplescript61
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript61/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI61
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh61
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh62
+    type: runSh
+    steps:
+      - IN: ac-samplescript62
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript62/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI62
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh62
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh63
+    type: runSh
+    steps:
+      - IN: ac-samplescript63
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript63/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI63
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh63
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh64
+    type: runSh
+    steps:
+      - IN: ac-samplescript64
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript64/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI64
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh64
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh65
+    type: runSh
+    steps:
+      - IN: ac-samplescript65
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript65/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI65
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh65
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh66
+    type: runSh
+    steps:
+      - IN: ac-samplescript66
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript66/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI66
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh66
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh67
+    type: runSh
+    steps:
+      - IN: ac-samplescript67
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript67/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI67
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh67
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh68
+    type: runSh
+    steps:
+      - IN: ac-samplescript68
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript68/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI68
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh68
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh69
+    type: runSh
+    steps:
+      - IN: ac-samplescript69
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript69/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI69
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh69
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh70
+    type: runSh
+    steps:
+      - IN: ac-samplescript70
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript70/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI70
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh70
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh71
+    type: runSh
+    steps:
+      - IN: ac-samplescript71
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript71/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI71
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh71
+      - TASK:
+        - script: ls
+
+  - name: ac-inrunSh72
+    type: runSh
+    steps:
+      - IN: ac-samplescript72
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript72/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI72
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh72
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh73
+    type: runSh
+    steps:
+      - IN: ac-samplescript73
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript73/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI73
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh73
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh74
+    type: runSh
+    steps:
+      - IN: ac-samplescript74
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript74/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI74
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh74
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh75
+    type: runSh
+    steps:
+      - IN: ac-samplescript75
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript75/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI75
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh75
+      - TASK:
+        - script: ls  
+  
+  - name: ac-inrunSh76
+    type: runSh
+    steps:
+      - IN: ac-samplescript6
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript76/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI76
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh76
+      - TASK:
+        - script: ls
+        
+  - name: ac-inrunSh77
+    type: runSh
+    steps:
+      - IN: ac-samplescript77
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript77/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI77
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh77
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh78
+    type: runSh
+    steps:
+      - IN: ac-samplescript78
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript78/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI78
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh78
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh79
+    type: runSh
+    steps:
+      - IN: ac-samplescript79
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript79/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI79
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh79
+      - TASK:
+        - script: ls
+  
+  - name: ac-inrunSh70
+    type: runSh
+    steps:
+      - IN: ac-samplescript70
+      - IN: trigger-allRunshAndRuncli
+      - TASK:
+        - script: ./IN/ar-samplescript70/gitRepo/echo.sh
+        
+  - name: ac-inrunCLI70
+    type: runCLI
+    steps:
+      - IN: ac-inrunSh70
       - TASK:
         - script: ls
         
