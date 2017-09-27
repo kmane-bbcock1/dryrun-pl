@@ -1,29 +1,29 @@
 resources:
 
 #CLICONFIG
-  - name: ac_dh_cli
-    type: cliConfig
-    integration: "docker"
+#  - name: ac_dh_cli
+#    type: cliConfig
+#    integration: "docker"
+ #   
+#  - name: ac_quay_cli
+#    type: cliConfig
+#    integration: "ship-quay" 
+  
+#  - name: ac_gcr_cli
+#    type: cliConfig
+#    integration: "ship-gcr" 
+  
+#  - name: ac_ecr_cli
+#    type: cliConfig
+#    integration: "ship-ecr"
+#  
+#  - name: ac_pdr_cli
+#    type: cliConfig
+#    integration: "ship-pdr"
     
-  - name: ac_quay_cli
-    type: cliConfig
-    integration: "ship-quay" 
-  
-  - name: ac_gcr_cli
-    type: cliConfig
-    integration: "ship-gcr" 
-  
-  - name: ac_ecr_cli
-    type: cliConfig
-    integration: "ship-ecr"
-  
-  - name: ac_pdr_cli
-    type: cliConfig
-    integration: "ship-pdr"
-    
-  - name: ac_aws_cli
-    type: cliConfig
-    integration: "ship-aws"
+#  - name: ac_aws_cli
+#    type: cliConfig
+#    integration: "ship-aws"
 
 #CLUSTERS
   
@@ -110,33 +110,33 @@ resources:
       sourceName : "testCL"
       region: "us-west-2"
   
-  - name: ac-tritoncluster
-    type: cluster
-    integration: ship-triton
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+ # - name: ac-tritoncluster
+  #  type: cluster
+  #  integration: ship-triton
+  #  pointer:
+  #    sourceName : "testCL"
+  #    region: "us-west-2"
   
-  - name: ac-azurecluster
-    type: cluster
-    integration: ship-azure
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+ # - name: ac-azurecluster
+  #  type: cluster
+ #   integration: ship-azure
+ #   pointer:
+ #     sourceName : "testCL"
+  #    region: "us-west-2"
       
-  - name: ac-dclcluster
-    type: cluster
-    integration: ship-dcl
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+  #- name: ac-dclcluster
+  #  type: cluster
+  #  integration: ship-dcl
+  #  pointer:
+   #   sourceName : "testCL"
+   #   region: "us-west-2"
   
-  - name: ac-kubernetescluster
-    type: cluster
-    integration: ship-kubernetes
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+ # - name: ac-kubernetescluster
+  #  type: cluster
+  #  integration: ship-kubernetes
+  #  pointer:
+  #    sourceName : "testCL"
+  #    region: "us-west-2"
       
 #DOCKER OPTIONS
 
