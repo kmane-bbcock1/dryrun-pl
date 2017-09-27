@@ -1,20 +1,7 @@
 triggers:
-   - name: ac-tg1
-     type: trigger
-     version:
-       counter: 0
-       
-   - name: ac-tg2
-     type: trigger
-     version:
-       counter: 0
-       
-   - name: ac-tg3
-     type: trigger
-     version:
-       counter: 0
+
    
-   - name: ac-trAllRunshAndRuncli
+   - name: ac-sample2
      type: trigger
      version:
        counter: 0
