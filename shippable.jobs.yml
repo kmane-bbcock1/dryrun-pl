@@ -8,7 +8,7 @@ jobs:
     steps:
       - IN: ac-version
          #versionName: testrelease
-      - IN: ac-inrunSh
+      - IN: ac-inrunSh1
       - TASK: managed
         bump: rc
        #- IN: ar-tg3
