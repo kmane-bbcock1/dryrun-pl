@@ -4,7 +4,7 @@ resources:
     type: gitRepo
     integration: "bitbucket"
     pointer:
-      sourceName: "shiphitchcock1/dryrun-pl"
+      sourceName: "shiphitchcock1/sample-script"
       branch: master
    
   - name: ac-samplescript302
