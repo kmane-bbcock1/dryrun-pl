@@ -6,7 +6,7 @@ resources:
     pointer:
       sourceName: "shiphitchcock1/sample-script"
       branch: master
-    flags: ac-samplescript301
+    flags: ac-samplescript301resource
    
   - name: ac-samplescript302
     type: gitRepo
