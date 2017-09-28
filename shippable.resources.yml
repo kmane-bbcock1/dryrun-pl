@@ -77,11 +77,5 @@ resources:
     pointer:
       sourceName: "shiphitchcock1/sample-script"
       branch: master
-      
-  - name: ac-samplescript312
-    type: gitRepo
-    integration: "github"
-    pointer:
-      sourceName: "shiphitchcock1/sample-script"
-      branch: master
+
  
