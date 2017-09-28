@@ -1,6 +1,9 @@
 jobs:
     
-  
+  - name: dryrun-pl_runCI
+    type: runCI
+    steps:
+      - IN: dryrun-pl_ciRepo
 
   - name: ac-inrunSh301
     type: runSh
