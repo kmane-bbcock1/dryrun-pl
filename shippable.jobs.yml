@@ -20,9 +20,7 @@ jobs:
     steps:
       - IN: ac-inrunSh301
       - TASK:
-        - script: ls
-        
-  
+        - script: ls   
         
   - name: ac-inrunCLI303
     type: runCLI
@@ -31,24 +29,19 @@ jobs:
       - TASK:
         - script: ls
         
-
-        
   - name: ac-inrunCLI304
     type: runCLI
     steps:
       - IN: ac-inrunSh301
       - TASK:
-        - script: ls
-        
- 
+        - script: ls    
         
   - name: ac-inrunCLI305
     type: runCLI
     steps:
       - IN: ac-inrunSh301
       - TASK:
-        - script: ls
-  
+        - script: ls  
         
   - name: ac-inrunCLI306
     type: runCLI
@@ -56,7 +49,6 @@ jobs:
       - IN: ac-inrunSh301
       - TASK:
         - script: ls
-        
  
   - name: ac-inrunCLI307
     type: runCLI
@@ -157,4 +149,123 @@ jobs:
       - IN: ac-inrunSh309
       - TASK:
         - script: ./IN/ac-samplescript310/gitRepo/echo.sh
+  
+  - name: ac-inrunSh311
+    type: runSh
+    steps:
+      - IN: ac-samplescript311
+      - TASK:
+        - script: ./IN/ac-samplescript311/gitRepo/echo.sh
+        
+  - name: ac-inrunSh312
+    type: runSh
+    steps:
+      - IN: ac-samplescript312
+      - IN: ac-inrunSh311
+      - TASK:
+        - script: ./IN/ac-samplescript312/gitRepo/echo.sh
+        
+  - name: ac-inrunSh313
+    type: runSh
+    steps:
+      - IN: ac-samplescript313
+      - IN: ac-inrunSh311
+      - TASK:
+        - script: ./IN/ac-samplescript313/gitRepo/echo.sh
+ 
+  - name: ac-inrunSh314
+    type: runSh
+    steps:
+      - IN: ac-samplescript314
+      - IN: ac-inrunSh312
+      - TASK:
+        - script: ./IN/ac-samplescript314/gitRepo/echo.sh
+  
+  - name: ac-inrunSh315
+    type: runSh
+    steps:
+      - IN: ac-samplescript315
+      - IN: ac-inrunSh312
+      - TASK:
+        - script: ./IN/ac-samplescript315/gitRepo/echo.sh
+        
+  - name: ac-inrunSh316
+    type: runSh
+    steps:
+      - IN: ac-samplescript316
+      - IN: ac-inrunSh313
+      - TASK:
+        - script: ./IN/ac-samplescript316/gitRepo/echo.sh
+        
+  - name: ac-inrunSh317
+    type: runSh
+    steps:
+      - IN: ac-samplescript317
+      - IN: ac-inrunSh313
+      - TASK:
+        - script: ./IN/ac-samplescript317/gitRepo/echo.sh
+        
+  - name: ac-inrunSh318
+    type: runSh
+    steps:
+      - IN: ac-samplescript318
+      - IN: ac-inrunSh314
+      - TASK:
+        - script: ./IN/ac-samplescript318/gitRepo/echo.sh
+        
+  - name: ac-inrunSh319
+    type: runSh
+    steps:
+      - IN: ac-samplescript319
+      - IN: ac-inrunSh314
+      - TASK:
+        - script: ./IN/ac-samplescript319/gitRepo/echo.sh
+        
+  - name: ac-inrunSh320
+    type: runSh
+    steps:
+      - IN: ac-samplescript320
+      - IN: ac-inrunSh315
+      - TASK:
+        - script: ./IN/ac-samplescript320/gitRepo/echo.sh
+  
+  - name: ac-inrunSh321
+    type: runSh
+    steps:
+      - IN: ac-samplescript321
+      - IN: ac-inrunSh315
+      - TASK:
+        - script: ./IN/ac-samplescript321/gitRepo/echo.sh
+        
+  - name: ac-inrunSh322
+    type: runSh
+    steps:
+      - IN: ac-samplescript322
+      - IN: ac-inrunSh316
+      - TASK:
+        - script: ./IN/ac-samplescript322/gitRepo/echo.sh
+        
+  - name: ac-inrunSh323
+    type: runSh
+    steps:
+      - IN: ac-samplescript323
+      - IN: ac-inrunSh316
+      - TASK:
+        - script: ./IN/ac-samplescript323/gitRepo/echo.sh
+        
+  - name: ac-inrunSh324
+    type: runSh
+    steps:
+      - IN: ac-samplescript324
+      - IN: ac-inrunSh317
+      - TASK:
+        - script: ./IN/ac-samplescript324/gitRepo/echo.sh
+ 
+  - name: ac-inrunSh325
+    type: runSh
+    steps:
+      - IN: ac-samplescript325
+      - IN: ac-inrunSh317
+      - TASK:
+        - script: ./IN/ac-samplescript325/gitRepo/echo.sh
         
