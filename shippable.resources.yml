@@ -205,6 +205,77 @@ resources:
       sourceName: "shiphitchcock1/sample-script"
       branch: master
   
+  - name: ac-samplescript330
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript331
+    type: gitRepo
+    integration: "bitbucket"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+   
+  - name: ac-samplescript332
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript333
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+      
+  - name: ac-samplescript334
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript335
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript336
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript337
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript338
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
+  - name: ac-samplescript339
+    type: gitRepo
+    integration: "github"
+    pointer:
+      sourceName: "shiphitchcock1/sample-script"
+      branch: master
+      
   - name: ac-samplescript340
     type: gitRepo
     integration: "github"
