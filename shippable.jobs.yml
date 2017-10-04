@@ -378,5 +378,12 @@ jobs:
       - TASK:
         - script: ./IN/ac-samplescript338/gitRepo/echo.sh
         
-  
+  - name: ac-inrunSh339
+    type: runSh
+    steps:
+      - IN: ac-samplescript339
+      - IN: ac-inrunSh336
+      - IN: ac-inrunSh337
+      - TASK:
+        - script: ./IN/ac-samplescript339/gitRepo/echo.sh
         
