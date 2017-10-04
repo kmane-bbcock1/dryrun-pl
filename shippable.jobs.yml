@@ -210,7 +210,6 @@ jobs:
     steps:
       - IN: ac-samplescript318
       - IN: ac-inrunSh314
-      - OUT: ac-inrunSh326
       - TASK:
         - script: ./IN/ac-samplescript318/gitRepo/echo.sh
         
@@ -219,7 +218,6 @@ jobs:
     steps:
       - IN: ac-samplescript319
       - IN: ac-inrunSh314
-      - OUT: ac-inrunSh327
       - TASK:
         - script: ./IN/ac-samplescript319/gitRepo/echo.sh
         
@@ -228,7 +226,6 @@ jobs:
     steps:
       - IN: ac-samplescript320
       - IN: ac-inrunSh315
-      - OUT: ac-inrunSh328
       - TASK:
         - script: ./IN/ac-samplescript320/gitRepo/echo.sh
   
@@ -237,7 +234,6 @@ jobs:
     steps:
       - IN: ac-samplescript321
       - IN: ac-inrunSh315
-      - OUT: ac-inrunSh329
       - TASK:
         - script: ./IN/ac-samplescript321/gitRepo/echo.sh
         
@@ -246,7 +242,6 @@ jobs:
     steps:
       - IN: ac-samplescript322
       - IN: ac-inrunSh316
-      - OUT: ac-inrunSh330
       - TASK:
         - script: ./IN/ac-samplescript322/gitRepo/echo.sh
         
@@ -255,7 +250,6 @@ jobs:
     steps:
       - IN: ac-samplescript323
       - IN: ac-inrunSh316
-      - OUT: ac-inrunSh331
       - TASK:
         - script: ./IN/ac-samplescript323/gitRepo/echo.sh
         
@@ -264,7 +258,6 @@ jobs:
     steps:
       - IN: ac-samplescript324
       - IN: ac-inrunSh317
-      - OUT: ac-inrunSh332
       - TASK:
         - script: ./IN/ac-samplescript324/gitRepo/echo.sh
  
@@ -273,7 +266,6 @@ jobs:
     steps:
       - IN: ac-samplescript325
       - IN: ac-inrunSh317
-      - OUT: ac-inrunSh333
       - TASK:
         - script: ./IN/ac-samplescript325/gitRepo/echo.sh
   
@@ -281,7 +273,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript326
-      - OUT: ac-inrunSh334
       - IN: ac-inrunSh318
       - TASK:
         - script: ./IN/ac-samplescript326/gitRepo/echo.sh
@@ -290,7 +281,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript327
-      - OUT: ac-inrunSh334
       - IN: ac-inrunSh319
       - TASK:
         - script: ./IN/ac-samplescript327/gitRepo/echo.sh
@@ -299,7 +289,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript328
-      - OUT: ac-inrunSh335
       - IN: ac-inrunSh320
       - TASK:
         - script: ./IN/ac-samplescript328/gitRepo/echo.sh
@@ -308,7 +297,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript329
-      - OUT: ac-inrunSh335
       - IN: ac-inrunSh321
       - TASK:
         - script: ./IN/ac-samplescript329/gitRepo/echo.sh
@@ -317,7 +305,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript330
-      - OUT: ac-inrunSh336
       - IN: ac-inrunSh322
       - TASK:
         - script: ./IN/ac-samplescript330/gitRepo/echo.sh
@@ -326,7 +313,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript331
-      - OUT: ac-inrunSh336
       - IN: ac-inrunSh323
       - TASK:
         - script: ./IN/ac-samplescript331/gitRepo/echo.sh
@@ -335,7 +321,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript332
-      - OUT: ac-inrunSh337
       - IN: ac-inrunSh324
       - TASK:
         - script: ./IN/ac-samplescript332/gitRepo/echo.sh
@@ -344,7 +329,6 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript333
-      - OUT: ac-inrunSh337
       - IN: ac-inrunSh325
       - TASK:
         - script: ./IN/ac-samplescript333/gitRepo/echo.sh
@@ -353,7 +337,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript334
-      - OUT: ac-inrunSh338
+      - IN: ac-inrunSh326
+      - IN: ac-inrunSh327
       - TASK:
         - script: ./IN/ac-samplescript334/gitRepo/echo.sh
         
@@ -361,7 +346,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript335
-      - OUT: ac-inrunSh338
+      - IN: ac-inrunSh328
+      - IN: ac-inrunSh329
       - TASK:
         - script: ./IN/ac-samplescript335/gitRepo/echo.sh
         
@@ -369,7 +355,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript336
-      - OUT: ac-inrunSh339
+      - IN: ac-inrunSh330
+      - IN: ac-inrunSh331
       - TASK:
         - script: ./IN/ac-samplescript336/gitRepo/echo.sh
         
@@ -377,7 +364,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript337
-      - OUT: ac-inrunSh339
+      - IN: ac-inrunSh332
+      - IN: ac-inrunSh333
       - TASK:
         - script: ./IN/ac-samplescript337/gitRepo/echo.sh
   
@@ -385,7 +373,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript338
-      - OUT: ac-inrunSh340
+      - IN: ac-inrunSh334
+      - IN: ac-inrunSh335
       - TASK:
         - script: ./IN/ac-samplescript338/gitRepo/echo.sh
         
@@ -393,7 +382,8 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript339
-      - OUT: ac-inrunSh340
+      - IN: ac-inrunSh336
+      - IN: ac-inrunSh337
       - TASK:
         - script: ./IN/ac-samplescript339/gitRepo/echo.sh
         
@@ -401,5 +391,7 @@ jobs:
     type: runSh
     steps:
       - IN: ac-samplescript340
+      - IN: ac-inrunSh338
+      - IN: ac-inrunSh339
       - TASK:
         - script: ./IN/ac-samplescript340/gitRepo/echo.sh
